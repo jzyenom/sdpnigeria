@@ -6,6 +6,7 @@ import { logout } from "../slices/authSlice";
 import Logo from "./Logo";
 
 // import "./navbar.css";
+import User from "./../../../server/models/User";
 
 const Header = () => {
   const { userInfo } = useSelector((state) => state.auth);
@@ -112,68 +113,195 @@ const Header = () => {
             <div className="main-header__right">
               <nav className="main-header__nav main-menu main-menu--four">
                 <ul className="main-menu__list">
+                  {/* Home */}
                   <li>
                     <Link to="/">Home</Link>
                   </li>
-                  <li>
-                    <Link to="/about">About Us</Link>
-                  </li>
-                  <li>
-                    <Link to="/contact">Contact Us</Link>
-                  </li>
+                  {/* About Us */}
                   <li className="dropdown">
-                    <Link to="#">Donations</Link>
+                    <Link to="#">About Us</Link>
                     <ul>
                       <li>
-                        <Link to="/donations-grid">Donations Grid</Link>
+                        <Link to="/the_party">The Party</Link>
                       </li>
                       <li>
-                        <Link to="/donations-list">Donations List</Link>
+                        <Link to="/our_party_ideology">Our Party Ideology</Link>
                       </li>
                       <li>
-                        <Link to="/donations-carousel">
-                          Donations Carousel 01
+                        <Link to="/national_chairman">National Chairman</Link>
+                      </li>
+                      <li>
+                        <Link to="/national_working_committee">
+                          National Working Committee
                         </Link>
                       </li>
                       <li>
-                        <Link to="/donations-carousel-2">
-                          Donations Carousel 02
+                        <Link to="/state_chairman">
+                          State Chairman And Secretary
                         </Link>
                       </li>
-                      <li className="dropdown">
-                        <Link to="#">Donation Details</Link>
-                        <ul>
-                          <li>
-                            <Link to="/donation-details">No sidebar</Link>
-                          </li>
-                          <li>
-                            <Link to="/donation-details-left">
-                              Left sidebar
-                            </Link>
-                          </li>
-                          <li>
-                            <Link to="/donation-details-right">
-                              Right sidebar
-                            </Link>
-                          </li>
-                        </ul>
+                      <li>
+                        <Link to="/sdp_ambassadors">SDP Ambassador</Link>
                       </li>
-                      <li className="dropdown">
-                        <Link to="#">Donate Now</Link>
-                        <ul>
-                          <li>
-                            <Link to="/donate">No sidebar</Link>
-                          </li>
-                          <li>
-                            <Link to="/donate-left">Left sidebar</Link>
-                          </li>
-                          <li>
-                            <Link to="/donate-right">Right sidebar</Link>
-                          </li>
-                        </ul>
+                      <li>
+                        <Link to="/sdp_champions">SDP Champions </Link>
+                      </li>
+                      <li>
+                        <Link to="/state_party_structure">
+                          State Party Structure
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/sdp_mission">SDP Mission </Link>
+                      </li>
+                      <li>
+                        <Link to="/our_mission_against_hunger">
+                          Our Mission Against Hunger{" "}
+                        </Link>
                       </li>
                     </ul>
                   </li>
+                  {/* Policies */}
+                  <li className="dropdown">
+                    <Link to="#">Policies</Link>
+                    <ul>
+                      <li>
+                        <Link to="/social_security">Social Security</Link>
+                      </li>
+                      <li>
+                        <Link to="/education_&_human_capital_development">
+                          Education & Human Capital Development
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/economy">Economy</Link>
+                      </li>
+                      <li>
+                        <Link to="/health_for_all">Health For All</Link>
+                      </li>
+                      <li>
+                        <Link to="/youth_development">Youth Development</Link>
+                      </li>
+                      <li>
+                        <Link to="/agriculture_development">
+                          Agriculture Development{" "}
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/infrastructural_development">
+                          Infrastructural Development
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/industrial_growth">Industrial Growth</Link>
+                      </li>
+                      <li>
+                        <Link to="/solid_mineral-&-natural-resources">
+                          Solid Mineral & Natural Resources
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/foreign_policy">Foreign Policy </Link>
+                      </li>
+                    </ul>
+                  </li>
+                  {/* Resources */}
+                  <li className="dropdown">
+                    <Link to="#">Resources</Link>
+                    <ul>
+                      <li>
+                        <Link to="/register">Member Application [Instant]</Link>
+                      </li>
+                      <li>
+                        <Link to="/download_sdp_party_manifesto">
+                          Download SDP Party Manifesto
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/download_sdp_party_constitution">
+                          Download SDP Party Constitution
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/election_&_campaign_schedules">
+                          Election & Campaign Schedules
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/internal_electiion_&_polling_result">
+                          Internal Election & Polling Results
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/election_results_inec">
+                          Election Results [INEC]
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/sdp_party_souvenirs">
+                          SDP Party Souvenirs
+                        </Link>
+                      </li>
+                    </ul>
+                  </li>
+                  {/* SDP Studio */}
+                  <li className="dropdown">
+                    <Link to="#">Policies</Link>
+                    <ul>
+                      <li>
+                        <Link to="/social_studio">Social Studio [LIVE]</Link>
+                      </li>
+                      <li>
+                        <Link to="/press_release">Press Release</Link>
+                      </li>
+                      <li>
+                        <Link to="/sdp_news_&_update">SDP News & Update</Link>
+                      </li>
+                      <li>
+                        <Link to="/sdp_&_me">SDP & ME</Link>
+                      </li>
+                      <li>
+                        <Link to="/upcoming_webinars">Upcoming Webinars</Link>
+                      </li>
+                      <li>
+                        <Link to="/photo_gallery">Photo Gallery</Link>
+                      </li>
+                      <li>
+                        <Link to="/video_gallery">Video Gallery</Link>
+                      </li>{" "}
+                    </ul>
+                  </li>
+                  {/* SDP In The Diaspora */}
+                  <li className="dropdown">
+                    <Link to="#">Policies</Link>
+                    <ul>
+                      <li>
+                        <Link to="/foreign_member_application">
+                          Foreign Member Application [Instant]
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/foreign_chapter_coordinators">
+                          Foreign Chapter Coordinators
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/foreign_chapter_offices">
+                          Foreign Chapter Offices
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/chapter_ambassadors">
+                          Chapter Ambassadors
+                        </Link>
+                      </li>{" "}
+                    </ul>
+                  </li>
+
+                  <li>
+                    <Link to="/contact">Contact Us</Link>
+                  </li>
+
                   {userInfo ? (
                     <>
                       <li>
@@ -254,49 +382,300 @@ const Header = () => {
 
           <div className="mobile-nav__container">
             <ul className="main-menu__list">
+              {/* Home */}
               <li>
                 <Link to="/">Home</Link>
               </li>
-              <li>
-                <Link to="/about">About Us</Link>
-              </li>
-              <li>
-                <Link to="/contact">Contact Us</Link>
-              </li>
+
+              {/* About Us */}
               <li className="dropdown">
                 <Link
                   to="#"
-                  className={openDropdowns["donations"] ? "expanded" : ""}
+                  className={openDropdowns["about_us"] ? "expanded" : ""}
                 >
-                  Donations
+                  About Us
                   <button
                     aria-label="dropdown toggler"
-                    onClick={() => toggleDropdown("donations")}
+                    onClick={() => toggleDropdown("about_us")}
                   >
-                    <i className="fa fa-angle-down"></i>
+                    <i
+                      className={
+                        openDropdowns["about_us"]
+                          ? "fa fa-angle-left"
+                          : "fa fa-angle-down"
+                      }
+                    ></i>
                   </button>
                 </Link>
                 <ul
-                  className={openDropdowns["donations"] ? "expanded" : ""}
+                  className={openDropdowns["about_us"] ? "expanded" : ""}
                   style={{
-                    display: openDropdowns["donations"] ? "block" : "none",
+                    display: openDropdowns["about_us"] ? "block" : "none",
                   }}
                 >
                   <li>
-                    <Link to="/donations-grid">Donations Grid</Link>
+                    <Link to="/the_party">The Party</Link>
                   </li>
                   <li>
-                    <Link to="/donations-list">Donations List</Link>
+                    <Link to="/our_party_ideology">Our Party Ideology</Link>
                   </li>
                   <li>
-                    <Link to="/donations-carousel">Donations Carousel 01</Link>
+                    <Link to="/national_chairman">National Chairman</Link>
                   </li>
                   <li>
-                    <Link to="/donations-carousel-2">
-                      Donations Carousel 02
+                    <Link to="/national_working_committee">
+                      National Working Committee
                     </Link>
                   </li>
-                  <li className="dropdown">
+                  <li>
+                    <Link to="/state_chairman">
+                      State Chairman And Secretary
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/sdp_ambassadors">SDP Ambassador</Link>
+                  </li>
+                  <li>
+                    <Link to="/sdp_champions">SDP Champions </Link>
+                  </li>
+                  <li>
+                    <Link to="/state_party_structure">
+                      State Party Structure
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/sdp_mission">SDP Mission </Link>
+                  </li>
+                  <li>
+                    <Link to="/our_mission_against_hunger">
+                      Our Mission Against Hunger{" "}
+                    </Link>
+                  </li>
+                </ul>
+              </li>
+
+              {/* Policies */}
+              <li className="dropdown">
+                <Link
+                  to="#"
+                  className={openDropdowns["policies"] ? "expanded" : ""}
+                >
+                  Policies{" "}
+                  <button
+                    aria-label="dropdown toggler"
+                    onClick={() => toggleDropdown("policies")}
+                  >
+                    <i
+                      className={
+                        openDropdowns["policies"]
+                          ? "fa fa-angle-left"
+                          : "fa fa-angle-down"
+                      }
+                    ></i>
+                  </button>
+                </Link>
+                <ul
+                  className={openDropdowns["policies"] ? "expanded" : ""}
+                  style={{
+                    display: openDropdowns["policies"] ? "block" : "none",
+                  }}
+                >
+                  <li>
+                    <Link to="/social_security">Social Security</Link>
+                  </li>
+                  <li>
+                    <Link to="/education_&_human_capital_development">
+                      Education & Human Capital Development
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/economy">Economy</Link>
+                  </li>
+                  <li>
+                    <Link to="/health_for_all">Health For All</Link>
+                  </li>
+                  <li>
+                    <Link to="/youth_development">Youth Development</Link>
+                  </li>
+                  <li>
+                    <Link to="/agriculture_development">
+                      Agriculture Development{" "}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/infrastructural_development">
+                      Infrastructural Development
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/industrial_growth">Industrial Growth</Link>
+                  </li>
+                  <li>
+                    <Link to="/solid_mineral-&-natural-resources">
+                      Solid Mineral & Natural Resources
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/foreign_policy">Foreign Policy </Link>
+                  </li>
+                </ul>
+              </li>
+
+              {/* Resources */}
+              <li className="dropdown">
+                <Link
+                  to="#"
+                  className={openDropdowns["resources"] ? "expanded" : ""}
+                >
+                  Resources{" "}
+                  <button
+                    aria-label="dropdown toggler"
+                    onClick={() => toggleDropdown("resources")}
+                  >
+                    <i
+                      className={
+                        openDropdowns["resources"]
+                          ? "fa fa-angle-left"
+                          : "fa fa-angle-down"
+                      }
+                    ></i>
+                  </button>
+                </Link>
+                <ul
+                  className={openDropdowns["resources"] ? "expanded" : ""}
+                  style={{
+                    display: openDropdowns["resources"] ? "block" : "none",
+                  }}
+                >
+                  <li>
+                    <Link to="/register">Member Application [Instant]</Link>
+                  </li>
+                  <li>
+                    <Link to="/download_sdp_party_manifesto">
+                      Download SDP Party Manifesto
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/download_sdp_party_constitution">
+                      Download SDP Party Constitution
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/election_&_campaign_schedules">
+                      Election & Campaign Schedules
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/internal_electiion_&_polling_result">
+                      Internal Election & Polling Results
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/election_results_inec">
+                      Election Results [INEC]
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/sdp_party_souvenirs">SDP Party Souvenirs</Link>
+                  </li>
+                </ul>
+              </li>
+
+              {/* SDP Studio */}
+              <li className="dropdown">
+                <Link
+                  to="#"
+                  className={openDropdowns["studio"] ? "expanded" : ""}
+                >
+                  SDP Studio{" "}
+                  <button
+                    aria-label="dropdown toggler"
+                    onClick={() => toggleDropdown("studio")}
+                  >
+                    <i
+                      className={
+                        openDropdowns["studio"]
+                          ? "fa fa-angle-left"
+                          : "fa fa-angle-down"
+                      }
+                    ></i>
+                  </button>
+                </Link>
+                <ul
+                  className={openDropdowns["studio"] ? "expanded" : ""}
+                  style={{
+                    display: openDropdowns["studio"] ? "block" : "none",
+                  }}
+                >
+                  <li>
+                    <Link to="/social_studio">Social Studio [LIVE]</Link>
+                  </li>
+                  <li>
+                    <Link to="/press_release">Press Release</Link>
+                  </li>
+                  <li>
+                    <Link to="/sdp_news_&_update">SDP News & Update</Link>
+                  </li>
+                  <li>
+                    <Link to="/sdp_&_me">SDP & ME</Link>
+                  </li>
+                  <li>
+                    <Link to="/upcoming_webinars">Upcoming Webinars</Link>
+                  </li>
+                  <li>
+                    <Link to="/photo_gallery">Photo Gallery</Link>
+                  </li>
+                  <li>
+                    <Link to="/video_gallery">Video Gallery</Link>
+                  </li>
+                </ul>
+              </li>
+
+              {/* SDP In The Diaspora */}
+              <li className="dropdown">
+                <Link
+                  to="#"
+                  className={openDropdowns["diaspora"] ? "expanded" : ""}
+                >
+                  SDP In The Diaspora{" "}
+                  <button
+                    aria-label="dropdown toggler"
+                    onClick={() => toggleDropdown("diaspora")}
+                  >
+                    <i
+                      className={
+                        openDropdowns["diaspora"]
+                          ? "fa fa-angle-left"
+                          : "fa fa-angle-down"
+                      }
+                    ></i>
+                  </button>
+                </Link>
+                <ul
+                  className={openDropdowns["diaspora"] ? "expanded" : ""}
+                  style={{
+                    display: openDropdowns["diaspora"] ? "block" : "none",
+                  }}
+                >
+                  <li>
+                    <Link to="/foreign_member_application">
+                      Foreign Member Application [Instant]
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/foreign_chapter_coordinators">
+                      Foreign Chapter Coordinators
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/foreign_chapter_offices">
+                      Foreign Chapter Offices
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/chapter_ambassadors">Chapter Ambassadors</Link>
+                  </li>
+                  {/* <li className="dropdown">
                     <Link to="#">
                       Donation Details
                       <button
@@ -353,9 +732,14 @@ const Header = () => {
                         <Link to="/donate-right">Right sidebar</Link>
                       </li>
                     </ul>
-                  </li>
+                  </li> */}
                 </ul>
               </li>
+
+              <li>
+                <Link to="/contact">Contact Us</Link>
+              </li>
+
               {userInfo ? (
                 <>
                   <li>

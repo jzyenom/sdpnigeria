@@ -31,6 +31,7 @@ import "../src/assets/vendors/timepicker/timePicker.css";
 import "../src/assets/css/cleenhearts.css";
 // import "../src/assets/css/agrion.css";
 import "../src/assets/vendors/cleenhearts-icons/style.css";
+import Footer from "./components/Footer.jsx";
 
 const App = () => {
   return (
@@ -40,6 +41,7 @@ const App = () => {
       {/* <Container className=""> */}
       <Outlet />
       {/* </Container> */}
+      <Footer />
     </>
   );
 };

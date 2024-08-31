@@ -7,7 +7,10 @@ import HelpDonate from "../components/HelpDonate";
 UserPage;
 import Donate from "../components/Donate";
 import UserPage from "./UserPage";
-import AboutScreen from "./AboutScreen";
+import Home from "../screens/Home";
+// import AboutScreen from "./AboutScreen";
+import Tabs from "./../components/tabs/Tabs";
+import NationalChairman from "./about_us/NationalChairman";
 
 const HomeScreen = () => {
   // eslint-disable-next-line no-unused-vars
@@ -20,14 +23,15 @@ const HomeScreen = () => {
       {userInfo ? (
         <>
           <Hero />
-          <AboutScreen />
-
-          {/* <About /> */}
+          <Home />
+          {/* <Tabs /> */}
+          {/* <AboutScreen /> */}
+          {/* <NationalChairman /> */}
+          <About />
         </>
       ) : (
         <>
           <Hero />
-          <AboutScreen />
           {/* <About /> */}
           {/* <HelpDonate />
           <Donate /> */}

@@ -1,4 +1,4 @@
-// import "../assets/css/agrion.css";
+import CommitteeList from "../assets/committee";
 
 const About = () => {
   // const image1 = () => <img src="../src/assets/images/slider_bg2.jpg" />;
@@ -8,17 +8,13 @@ const About = () => {
       <section className="about-one about-one--home section-space">
         <div className="about-one__bg">
           <div className="about-one__bg__border"></div>
-          {/* <!-- /.about-one__bg__border --> */}
           <div
             className="about-one__bg__inner"
             style={{
-              backgroundImage:
-                "url(../src/assets/images/shapes/about-shape-1-1.png)",
+              backgroundImage: "url(src/assets/images/about/about-1-2.png)",
             }}
           ></div>
-          {/* <!-- /.about-one__left__bg__inner --> */}
         </div>
-        {/* <!-- /.about-one__left__bg --> */}
         <div className="container">
           <div className="row gutter-y-50">
             <div
@@ -26,10 +22,22 @@ const About = () => {
               data-wow-delay="00ms"
               data-wow-duration="1500ms"
             >
-              <div className="about-one__left">
+              <div className="sec-title">
+                <h6 className="sec-title__tagline @@extraClassName">
+                  SDP MEDIA{" "}
+                </h6>
+                {/* <!-- /.sec-title__tagline --> */}
+
+                <h3 className="sec-title__title">
+                  Video <span className="sec-title__title__inner">Media</span>
+                </h3>
+                {/* <!-- /.sec-title__title --> */}
+              </div>
+              {/* <!-- /.sec-title --> */}
+              <div className="about-one__right">
                 <div className="about-one__image">
                   <img
-                    src="src/assets/images/about/about-1-1.png"
+                    src="src/assets/images/video.jpg"
                     alt="about"
                     className="about-one__image__one"
                   />
@@ -49,49 +57,34 @@ const About = () => {
                     </a>
                     {/* <!-- /.about-one__video__btn --> */}
                   </div>
-                  {/* <!-- /.about-one__video --> */}
                   <div className="about-one__profile volunteer-profile">
                     <div className="volunteer-profile__inner">
                       <img
-                        src="src/assets/images/resources/robert-joe-kerry.png"
+                        src="src/assets/images/resources/national-chairman.jpg"
                         alt="Robert Joe Kerry"
                         className="volunteer-profile__image"
                       />
                       <div className="volunteer-profile__info">
                         <h4 className="volunteer-profile__name">
-                          <a href="volunteer-details.html">Robert Joe Kerry</a>
+                          <a href="volunteer-details.html">
+                            ALHAJI SHEHU MUSA GABAM
+                          </a>
                         </h4>
-                        {/* <!-- /.volunteer-profile__name --> */}
                         <p className="volunteer-profile__designation">
-                          Founder
+                          National Chairman
                         </p>
-                        {/* <!-- /.volunteer-profile__designation --> */}
                       </div>
-                      {/* <!-- /.volunteer-profile__info --> */}
                     </div>
-                    {/* <!-- /.volunteer-profile__inner --> */}
                   </div>
-                  {/* <!-- /.about-one__profile --> */}
                 </div>
-                {/* <!-- /.about-one__image --> */}
               </div>
-              {/* <!-- /.about-one__left --> */}
             </div>
             <div className="col-xl-6">
               <div className="about-one__content">
                 <div className="sec-title">
-                  <h6 className="sec-title__tagline @@extraClassName">
-                    ABOUT CLEAN HEART
-                  </h6>
-                  {/* <!-- /.sec-title__tagline --> */}
-
-                  <h3 className="sec-title__title">
-                    Helping Each Other can Make World{" "}
-                    <span className="sec-title__title__inner">Better</span>
-                  </h3>
-                  {/* <!-- /.sec-title__title --> */}
+                  <h6 className="sec-title__tagline">ABOUT THE PARTY SDP</h6>
+                  <h3 className="sec-title__title">SOCIAL DEMOCRATIC PARTY</h3>
                 </div>
-                {/* <!-- /.sec-title --> */}
                 <div
                   className="about-one__text-box wow fadeInUp"
                   data-wow-delay="00ms"
@@ -99,131 +92,156 @@ const About = () => {
                 >
                   <div className="about-one__text-box__image">
                     <img
-                      src="src/assets/images/about/about-1-3.jpg"
+                      src="src/assets/images/Sdplogo_white.png"
+                      width="10"
                       alt="about"
                     />
                   </div>
-                  {/* <!-- /.about-one__text-box__image --> */}
                   <p className="about-one__text">
-                    We help companies develop powerful corporate social
-                    responsibility, grantmaking, and employee engagement
-                    strategies.
+                    The dignity of the human person and the sanctity of life are
+                    non-negotiable.
+                    <br />
+                    The Nigerian state is currently facing severe challenges.
+                    <br />
+                    These challenges include:
+                  </p>
+                  <p className="story-one__text story-one__text--one">
+                    • To provide comprehensive support to the youth in Nigeria,
+                    focusing on empowering them to overcome poverty and
+                    unemployment.
+                    <br />
+                    • To identify and nurture the talents and skills of the
+                    youth and provide them with opportunities to express and
+                    develop their abilities.
+                    <br />
+                    • To offer life support services including basic needs such
+                    as food, shelter, healthcare, and access to education for
+                    the youth in need.
+                    <br />
+                    • To create a supportive and inclusive community for the
+                    youth that promotes personal growth, resilience, and
+                    positive mental health.
+                    <br />• To collaborate with stakeholders, including
+                    government agencies, non-profit organizations, and local
+                    communities, to implement sustainable solutions for youth
+                    empowerment in Nigeria.
                   </p>
                 </div>
-                {/* <!-- /.about-one__text-box --> */}
-                <div className="about-one__wrapper">
-                  <div className="row gutter-y-40">
-                    <div
-                      className="col-lg-4 col-sm-4 wow fadeInUp"
-                      data-wow-delay="00ms"
-                      data-wow-duration="1500ms"
-                    >
-                      <div className="about-one__donate about-one__donate--one">
-                        <div className="about-one__donate__icon">
-                          <span className="icon-team"></span>
-                        </div>
-                        {/* <!-- /.about-one__donate__icon --> */}
-                        <h4 className="about-one__donate__title">
-                          join our team
-                        </h4>
-                        {/* <!-- /.about-one__donate__title --> */}
-                        <div className="about-one__donate__text">
-                          <span>6,472</span>
-                        </div>
-                        {/* <!-- /.about-one__donate__text --> */}
-                      </div>
-                      {/* <!-- /.about-one__donate --> */}
-                    </div>
-                    {/* <!-- /.col-lg-4 col-sm-4 --> */}
-                    <div
-                      className="col-lg-4 col-sm-4 wow fadeInUp"
-                      data-wow-delay="200ms"
-                      data-wow-duration="1500ms"
-                    >
-                      <div className="about-one__donate about-one__donate--two">
-                        <div className="about-one__donate__icon">
-                          <span className="icon-donation"></span>
-                        </div>
-                        {/* <!-- /.about-one__donate__icon --> */}
-                        <h4 className="about-one__donate__title">donate now</h4>
-                        {/* <!-- /.about-one__donate__title --> */}
-                        <div className="about-one__donate__text">
-                          <span>$38,768</span>
-                        </div>
-                        {/* <!-- /.about-one__donate__text --> */}
-                      </div>
-                      {/* <!-- /.about-one__donate --> */}
-                    </div>
-                    {/* <!-- /.col-lg-4 col-sm-4 --> */}
-                    <div
-                      className="col-lg-4 col-sm-4 wow fadeInUp"
-                      data-wow-delay="400ms"
-                      data-wow-duration="1500ms"
-                    >
-                      <div className="about-one__donate about-one__donate--three">
-                        <div className="about-one__donate__icon">
-                          <span className="icon-money"></span>
-                        </div>
-                        {/* <!-- /.about-one__donate__icon --> */}
-                        <h4 className="about-one__donate__title">
-                          total fund Raised
-                        </h4>
-                        {/* <!-- /.about-one__donate__title --> */}
-                        <div className="about-one__donate__text">
-                          <span>1,193,210</span>
-                        </div>
-                        {/* <!-- /.about-one__donate__text --> */}
-                      </div>
-                      {/* <!-- /.about-one__donate --> */}
-                    </div>
-                    {/* <!-- /.col-lg-4 col-sm-4 --> */}
-                  </div>
-                  {/* <!-- /.row --> */}
-                </div>
-                {/* <!-- /.about-one__wrapper --> */}
-                <div className="contact-information">
-                  <a
-                    href="contact.html"
-                    className="contact-information__btn cleenhearts-btn"
-                  >
-                    <div className="cleenhearts-btn__icon-box">
-                      <div className="cleenhearts-btn__icon-box__inner">
-                        <span className="icon-duble-arrow"></span>
-                      </div>
-                    </div>
-                    <span className="cleenhearts-btn__text">more about us</span>
-                  </a>
-                  {/* <!-- /.contact-information__btn --> */}
-                  <div className="contact-information__phone">
-                    <div className="contact-information__phone__icon">
-                      <span className="icon-phone"></span>
-                    </div>
-                    {/* <!-- /.contact-information__phone__icon --> */}
-                    <div className="contact-information__phone__text">
-                      <span>call any time</span>
-                      <h5>
-                        <a href="tel:+912659302003">+91 2659 302 003</a>
-                      </h5>
-                    </div>
-                    {/* <!-- /.contact-information__phone__text --> */}
-                  </div>
-                  {/* <!-- /.contact-information__phone --> */}
-                </div>
-                {/* <!-- /.contact-information --> */}
               </div>
-              {/* <!-- /.about-one__content --> */}
             </div>
           </div>
-          {/* <!-- /.row --> */}
         </div>
-        {/* <!-- /.container --> */}
         <img
-          src="src/assets/images/shape/about-shape-1-2.png"
+          src="src/assets/images/shapes/about-shape-1-2.png"
           alt="cleenhearts"
           className="about-one__hand"
         />
       </section>
-      {/* <!-- /.about-one section-space --> */}
+
+      <section className="team-one section-space">
+        <div className="container">
+          <div className="team-one__top">
+            <div className="row gutter-y-30 align-items-center">
+              <div className="col-xxl-8 col-lg-7">
+                <div className="sec-title">
+                  <h6 className="sec-title__tagline">
+                    National Working Committee
+                  </h6>
+                  <h3 className="sec-title__title">
+                    Meet The Team Behind SDP{" "}
+                    <span className="sec-title__title__inner">National </span>
+                    Committee
+                  </h3>
+                </div>
+              </div>
+              <div
+                className="col-xxl-4 col-lg-5 wow fadeInRight"
+                data-wow-duration="1500ms"
+              >
+                <p className="team-one__text">
+                  Who We Are: Team of volunteers - passionate youths interested
+                  in the development of Nigerian youths.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            className="team-one__carousel cleenhearts-owl__carousel cleenhearts-owl__carousel--with-shadow cleenhearts-owl__carousel--basic-nav owl-theme owl-carousel"
+            data-owl-options='{
+        "items": 3,
+        "margin": 30,
+        "smartSpeed": 700,
+        "loop":true,
+        "autoplay": 6000,
+        "nav":true,
+        "dots":false,
+        "navText": ["<span className=\"icon-arrow-left\"></span>","<span className=\"icon-arrow-right\"></span>"],
+        "responsive":{
+            "0":{
+                "items": 1,
+                "margin": 20
+            },
+            "575":{
+                "items": 1,
+                "margin": 30
+            },
+            "768":{
+                "items": 2,
+                "margin": 30
+            },
+            "992":{
+                "items": 3,
+                "margin": 30
+            },
+            "1200":{
+                "items": 3,
+                "margin": 30
+            }
+        }
+        }'
+          >
+            {CommitteeList.map((committee) => (
+              <div key={committee.id} className="item">
+                <div className="team-single">
+                  <div className="team-single__image">
+                    <img src={committee.image} alt={committee.name} />
+                    <div className="team-single__content">
+                      <ul className="team-single__social person-social">
+                        <li>
+                          <a href="https://facebook.com/">
+                            <span className="icon-facebook"></span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://twitter.com">
+                            <span className="icon-twitter"></span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://linkedin.com/">
+                            <span className="icon-linkedin"></span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://youtube.com/">
+                            <span className="icon-youtube"></span>
+                          </a>
+                        </li>
+                      </ul>
+                      <div className="team-single__content__inner">
+                        <h4 className="team-single__name">{committee.name}</h4>
+                        <p className="team-single__designation">
+                          {committee.post}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
     </>
   );
 };

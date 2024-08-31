@@ -22,13 +22,33 @@ import PrivateRoute from "./components/PrivateRoute.jsx";
 import store from "./store";
 import { Provider } from "react-redux";
 
-import ProductPage from "./screens/ProductPage.jsx";
+// import ProductPage from "./screens/ProductPage.jsx";
 
 // Import scripts that are available as npm packages
 import $ from "jquery";
 import UserPage from "./screens/UserPage.jsx";
 import AboutScreen from "./screens/AboutScreen.jsx";
 import ContactScreen from "./screens/ContactScreen.jsx";
+
+import TheParty from "./screens/about_us/TheParty.jsx";
+import Ideology from "./screens/about_us/Ideology.jsx";
+import NationalChairman from "./screens/about_us/NationalChairman.jsx";
+import ChairmanProfile from "./screens/about_us/ChairmanProfile.jsx";
+import NationalCommittee from "./screens/about_us/NationalCommittee.jsx";
+import StateChairman from "./screens/about_us/StateChairman.jsx";
+import SdpAmbassador from "./screens/about_us/SdpAmbassador.jsx";
+import SdpChampions from "./screens/about_us/SdpChampions.jsx";
+import StatePartyStructure from "./screens/about_us/StatePartyStructure.jsx";
+import SdpMission from "./screens/about_us/SdpMission.jsx";
+import AgainstHunger from "./screens/about_us/AgainstHunger.jsx";
+import Error404 from "./screens/about_us/Error404.jsx";
+
+import SocialSecurity from "./screens/policies/SocialSecurity.jsx";
+import HealthForAll from "./screens/policies/HealthForAll.jsx";
+import AgricultureDevelopment from "./screens/policies/AgricultureDevelopment.jsx";
+import InfrastructuralDevelopment from "./screens/policies/InfrastructuralDevelopment.jsx";
+import IndustrialGrowth from "./screens/policies/IndustrialGrowth.jsx";
+import SolidMineral from "./screens/policies/SolidMineral.jsx";
 
 // Load other scripts dynamically if not available as npm packages
 const loadScript = (src, type = "text/javascript") => {
@@ -94,7 +114,40 @@ const router = createBrowserRouter(
       <Route path="/login" element={<LoginScreen />} />
       <Route path="/register" element={<RegisterScreen />} />
       <Route path="/contact" element={<ContactScreen />} />
-      <Route path="/about" element={<AboutScreen />} />
+
+      <Route path="/the_party" element={<TheParty />} />
+      <Route path="/our_party_ideology" element={<Ideology />} />
+      <Route path="/national_chairman" element={<NationalChairman />} />
+      <Route
+        path="/national_working_committee"
+        element={<NationalCommittee />}
+      />
+      <Route path="/state_chairman" element={<StateChairman />} />
+      <Route path="/chairman_profile" element={<ChairmanProfile />} />
+      <Route path="/sdp_ambassadors" element={<SdpAmbassador />} />
+      <Route path="/sdp_champions" element={<SdpChampions />} />
+      <Route path="/state_party_structure" element={<StatePartyStructure />} />
+      <Route path="/sdp_mission" element={<SdpMission />} />
+      <Route path="/our_mission_against_hunger" element={<AgainstHunger />} />
+
+      <Route path="/about/:page" element={<AboutScreen />} />
+
+      <Route path="/social_security" element={<SocialSecurity />} />
+      <Route path="/health_for_all" element={<HealthForAll />} />
+      <Route
+        path="/agriculture_development"
+        element={<AgricultureDevelopment />}
+      />
+      <Route
+        path="/infrastructural_development"
+        element={<InfrastructuralDevelopment />}
+      />
+      <Route path="/industrial_growth" element={<IndustrialGrowth />} />
+      <Route
+        path="/solid_mineral-&-natural-resources"
+        element={<SolidMineral />}
+      />
+          <Route path="*" element={<Error404 />} />
 
       <Route path="" element={<PrivateRoute />}>
         <Route path="/profile/:id" element={<ProfileDetail />} />
@@ -103,6 +156,7 @@ const router = createBrowserRouter(
         <Route path="/profile/:id/edit" element={<UpdateUser />} />
         <Route path="/profile/:id/delete" element={<DeleteUser />} />
       </Route>
+
     </Route>,
   ),
 );

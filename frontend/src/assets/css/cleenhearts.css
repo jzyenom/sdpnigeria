@@ -91,9 +91,9 @@
   --cleenhearts-gray-rgb: 136, 136, 136;
   --cleenhearts-black: #000000;
   --cleenhearts-black-rgb: 0, 0, 0;
-  --cleenhearts-dark: #24102f;
+  --cleenhearts-dark: #edbf99;
   --cleenhearts-dark-rgb: 36, 16, 47;
-  --cleenhearts-dark2: #200c2a;
+  --cleenhearts-dark2: #198754;
   --cleenhearts-dark2-rgb: 32, 12, 42;
   --cleenhearts-dark3: #200c2b;
   --cleenhearts-dark3-rgb: 32, 12, 43;
@@ -3888,7 +3888,7 @@ textarea {
   width: 100%;
   height: 50%;
   border-radius: 20px 20px 0 0;
-  background-color: RGBA(var(--cleenhearts-dark2-rgb, 32, 12, 42), 0.8);
+  background-color: RGBA(var(--cleenhearts-white-rgb, 32, 12, 42), 0.4);
   opacity: 0;
   visibility: hidden;
   z-index: 1;
@@ -3906,7 +3906,7 @@ textarea {
   width: 100%;
   height: 50%;
   border-radius: 0 0 20px 20px;
-  background-color: RGBA(var(--cleenhearts-dark2-rgb, 32, 12, 42), 0.8);
+  background-color: RGBA(var(--cleenhearts-white-rgb, 32, 12, 42), 0.4);
   opacity: 0;
   visibility: hidden;
   z-index: 1;
@@ -4002,7 +4002,7 @@ textarea {
   text-transform: capitalize;
   line-height: 1.375;
   margin-bottom: 29px;
-  letter-spacing: var(--cleenhearts-letter-space, -0.72px);
+  letter-spacing: var(--cleenhearts-letter-space, -0.52px);
 }
 .blog-card__title:hover {
   color: var(--cleenhearts-purple, #fd7e14);
