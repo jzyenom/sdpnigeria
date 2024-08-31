@@ -2,10 +2,11 @@
 
 # npm i
 
-# npm run server
+# npm run server || nodemon
 
 # cd frontend
 
 # npm i
 
-# npm run frontend
+# npm run dev
+
