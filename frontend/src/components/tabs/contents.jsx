@@ -1,47 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Contents from "./../components/tabs/contents";
 
-const Home = () => {
+const contents = () => {
   return (
     <>
-          <section className="donations-list-page section-space">
+      <section className="donations-list-page section-space">
         <div className="container">
-          <div
-            className="donations-page__carousel cleenhearts-owl__carousel cleenhearts-owl__carousel--basic-nav owl-theme owl-carousel"
-            data-owl-options='{
-            "items": 3,
-            "margin": 30,
-            "smartSpeed": 700,
-            "loop":true,
-            "autoplay": 10000,
-            "nav":false,
-            "dots":true,
-            "navText": ["<span className=\"icon-arrow-left\"></span>","<span className=\"icon-arrow-right\"></span>"],
-            "responsive":{
-                "0":{
-                    "items": 1,
-                    "margin": 20
-                },
-                "576":{
-                    "items": 1,
-                    "margin": 20
-                },
-                "768":{
-                    "items": 1,
-                    "margin": 20
-                },
-                "992":{
-                    "items": 1,
-                    "margin": 20
-                },
-                "1200":{
-                    "items": 1,
-                    "margin": 20
-                }
-            }
-            }'
-          >
+          <div className="row gutter-y-30">
             {/* Tab 1 */}
             <div className="col-12">
               <div className="donation-card-three donation-card">
@@ -509,13 +474,13 @@ const Home = () => {
             </div>
             {/*End Tab 6 */}
           </div>
-          {/* <!-- /.donations-page__carousel --> */}
+          {/* <!-- /.row --> */}
         </div>
         {/* <!-- /.container --> */}
       </section>
-
+      {/* <!-- /.donations-list-page --> */}
     </>
   );
 };
 
-export default Home;
+export default contents;

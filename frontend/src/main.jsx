@@ -27,7 +27,7 @@ import { Provider } from "react-redux";
 // Import scripts that are available as npm packages
 import $ from "jquery";
 import UserPage from "./screens/UserPage.jsx";
-import AboutScreen from "./screens/AboutScreen.jsx";
+// import AboutScreen from "./screens/AboutScreen.jsx";
 import ContactScreen from "./screens/ContactScreen.jsx";
 
 import TheParty from "./screens/about_us/TheParty.jsx";
@@ -130,7 +130,7 @@ const router = createBrowserRouter(
       <Route path="/sdp_mission" element={<SdpMission />} />
       <Route path="/our_mission_against_hunger" element={<AgainstHunger />} />
 
-      <Route path="/about/:page" element={<AboutScreen />} />
+      {/* <Route path="/about/:page" element={<AboutScreen />} /> */}
 
       <Route path="/social_security" element={<SocialSecurity />} />
       <Route path="/health_for_all" element={<HealthForAll />} />
@@ -147,7 +147,7 @@ const router = createBrowserRouter(
         path="/solid_mineral-&-natural-resources"
         element={<SolidMineral />}
       />
-          <Route path="*" element={<Error404 />} />
+      <Route path="*" element={<Error404 />} />
 
       <Route path="" element={<PrivateRoute />}>
         <Route path="/profile/:id" element={<ProfileDetail />} />
@@ -156,7 +156,6 @@ const router = createBrowserRouter(
         <Route path="/profile/:id/edit" element={<UpdateUser />} />
         <Route path="/profile/:id/delete" element={<DeleteUser />} />
       </Route>
-
     </Route>,
   ),
 );
