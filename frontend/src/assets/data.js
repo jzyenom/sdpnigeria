@@ -1,0 +1,85 @@
+const dataList = {
+  states: [
+    // { id: "AB", name: "Abia State" },
+    // { id: "AD", name: "Adamawa State" },
+    // { id: "Ak", name: "Akwa Ibom State" },
+    // { id: "AN", name: "Anambara State" },
+    // { id: "BAU", name: "Bauchi State" },
+    // { id: "BAY", name: "Bayelsa State" },
+    // { id: "BEN", name: "Benue State" },
+    // { id: "BOR", name: "Borno State" },
+    // { id: "CR", name: "Cross River State" },
+    // { id: "DEL", name: "Delta State" },
+    // { id: "EBO", name: "Ebonyi State" },
+    // { id: "EDO", name: "Edo State" },
+    // { id: "EKI", name: "Ekiti State" },
+    // { id: "ENU", name: "Enugu State" },
+    // { id: "GOM", name: "Gombe State" },
+    // { id: "IMO", name: "Imo State" },
+    // { id: "JIG", name: "Jigawa State" },
+    // { id: "KAD", name: "Kaduna State" },
+    // { id: "KAN", name: "Kano State" },
+    // { id: "KAT", name: "Katsina State" },
+    // { id: "KEB", name: "Kebbi State" },
+    // { id: "KOG", name: "Kogi State" },
+    // { id: "KWA", name: "Kwara State" },
+    // { id: "LAG", name: "Lagos State" },
+    // { id: "NAS", name: "Nassarawa State" },
+    // { id: "NIG", name: "Niger State" },
+    // { id: "OND", name: "Ondo State" },
+    // { id: "OSU", name: "Osun State" },
+    // { id: "OYO", name: "Oyo State" },
+    // { id: "PLA", name: "Plateau State" },
+    // { id: "RIV", name: "River State" },
+    // { id: "SOK", name: "Sokoto State" },
+    // { id: "TAR", name: "Taraba State" },
+    // { id: "YOB", name: "Yobe State" },
+    // { id: "ZAM", name: "Zamfara State" },
+    // { id: "ABJ", name: "Abuja State" },
+    { id: "Abuja", name: "Abuja" },
+    { id: "Kaduna", name: "Kaduna" },
+    { id: "Benue", name: "Benue" },
+  ],
+  lga: {
+    Abuja: [
+      { id: "Gwaripa", name: "Gwaripa" },
+      { id: "Maitama", name: "Maitama" },
+    ],
+    Kaduna: [
+      { id: "Chikun", name: "Chikun" },
+      { id: "Kajuru", name: "Kajuru" },
+    ],
+    Benue: [
+      { id: "Nue_1", name: "Nue_1" },
+      { id: "Mar", name: "Mar" },
+    ],
+  },
+  ward: {
+    Gwaripa: [
+      { id: "Zokoriko Ward", name: "Zokoriko Ward" },
+      { id: "Gwaripa Ward", name: "Gwaripa Ward" },
+    ],
+    Maitama: [
+      { id: "Riko Ward", name: "Riko Ward" },
+      { id: "Maitama Ward", name: "Maitama Ward" },
+    ],
+    Chikun: [
+      { id: "Narayi Ward", name: "Narayi Ward" },
+      { id: "Sabo Ward", name: "Sabo Ward" },
+    ],
+    Kajuru: [
+      { id: "Kajuru Ward", name: "Kajuru Ward" },
+      { id: "Kulu Ward", name: "Kulu Ward" },
+    ],
+    Nue_1: [
+      { id: "NueOne Ward", name: "NueOne Ward" },
+      { id: "NueTwo Ward", name: "NueTwo Ward" },
+    ],
+    Mar: [
+      { id: "MarOne Ward", name: "MarOne Ward" },
+      { id: "MarTwo Ward", name: "MarTwo Ward" },
+    ],
+  },
+};
+
+export default dataList;

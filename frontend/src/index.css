@@ -1,0 +1,31 @@
+.custom-link {
+  color: orange;
+  font-weight: normal;
+}
+
+.custom-link:hover {
+  font-weight: bold;
+}
+
+.btn-orange {
+  background-color: orange;
+  color: white;
+  border: 1px solid orange;
+}
+
+.btn-orange:hover {
+  background-color: white;
+  color: orange;
+  border: 1px solid orange;
+}
+
+.btn-orange-outline {
+  background-color: white;
+  color: orange;
+  border: 1px solid orange;
+}
+
+.btn-orange-outline:hover {
+  background-color: orange;
+  color: white;
+}
