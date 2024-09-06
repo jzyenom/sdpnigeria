@@ -29,3 +29,47 @@
   background-color: orange;
   color: white;
 }
+
+.sdp-social {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.social-card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 10px;
+}
+
+.card-header {
+  background-color: #f8f9fa; /* Light background for header */
+  padding: 15px;
+  font-size: 16px;
+}
+
+.text-muted {
+  font-weight: 500;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.text-twitter-blue {
+  color: #1da1f2; /* Twitter blue color */
+}
+
+.twitter-blue-btn {
+  background-color: #1da1f2;
+  border-color: #1da1f2;
+}
+
+.twitter-blue-btn:hover {
+  background-color: #0d8bec;
+  border-color: #0d8bec;
+}
+
+.btn-dark {
+  background-color: #000; /* Black follow button */
+  border-color: #000;
+}

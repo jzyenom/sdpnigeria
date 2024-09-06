@@ -49,6 +49,14 @@ import AgricultureDevelopment from "./screens/policies/AgricultureDevelopment.js
 import InfrastructuralDevelopment from "./screens/policies/InfrastructuralDevelopment.jsx";
 import IndustrialGrowth from "./screens/policies/IndustrialGrowth.jsx";
 import SolidMineral from "./screens/policies/SolidMineral.jsx";
+import PartyManifesto from "./screens/resources/PartyManifesto.jsx";
+import PartyConstitution from "./screens/resources/PartyConstitution.jsx";
+
+import PhotoGallery from "./screens/sdp_studio/PhotoGallery.jsx";
+import PressRelease from "./screens/sdp_studio/PressRelease.jsx";
+import BlogDetails from "./screens/sdp_studio/BlogDetails.jsx";
+import SdpOnSocial from "./screens/sdp_studio/SdpOnSocial.jsx";
+import VideoGallery from "./screens/sdp_studio/VideoGallery.jsx";
 
 // Load other scripts dynamically if not available as npm packages
 const loadScript = (src, type = "text/javascript") => {
@@ -129,6 +137,22 @@ const router = createBrowserRouter(
       <Route path="/state_party_structure" element={<StatePartyStructure />} />
       <Route path="/sdp_mission" element={<SdpMission />} />
       <Route path="/our_mission_against_hunger" element={<AgainstHunger />} />
+
+      <Route
+        path="/download_sdp_party_manifesto"
+        element={<PartyManifesto />}
+      />
+
+      <Route
+        path="/download_sdp_party_constitution"
+        element={<PartyConstitution />}
+      />
+
+      <Route path="/photo_gallery" element={<PhotoGallery />} />
+      <Route path="/video_gallery" element={<VideoGallery />} />
+      <Route path="/press_release" element={<PressRelease />} />
+      <Route path="/blog_details/:id" element={<BlogDetails />} />
+      <Route path="/sdp_on_social_media" element={<SdpOnSocial />} />
 
       {/* <Route path="/about/:page" element={<AboutScreen />} /> */}
 

@@ -620,6 +620,9 @@ const Header = () => {
                     <Link to="/sdp_&_me">SDP & ME</Link>
                   </li>
                   <li>
+                    <Link to="/sdp_on_social_media">SDP On Social Media</Link>
+                  </li>
+                  <li>
                     <Link to="/upcoming_webinars">Upcoming Webinars</Link>
                   </li>
                   <li>
