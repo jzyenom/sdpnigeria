@@ -16,7 +16,7 @@ const SocialSecurity = () => {
           <h2 className="page-header__title">Social Security</h2>
           <ul className="cleenhearts-breadcrumb list-unstyled">
             <li>
-              <i className="icon-home"></i> <a href="index.html">Home</a>
+              <i className="icon-home"></i> <a href="/">Home</a>
             </li>
             <li>
               <span>our news</span>

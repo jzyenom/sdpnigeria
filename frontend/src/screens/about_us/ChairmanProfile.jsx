@@ -16,7 +16,7 @@ const ChairmanProfile = () => {
           <h2 className="page-header__title">Velma P. Hawkins</h2>
           <ul className="cleenhearts-breadcrumb list-unstyled">
             <li>
-              <i className="icon-home"></i> <a href="index.html">Home</a>
+              <i className="icon-home"></i> <a href="/">Home</a>
             </li>
             <li>
               <span>our volunteer’s</span>

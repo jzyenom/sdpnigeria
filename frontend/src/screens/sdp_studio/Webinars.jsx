@@ -1,11 +1,10 @@
 import React from "react";
+import ComingSoonAnimation from "../../components/ComingSoon";
 
 const Webinars = () => {
   return (
     <>
-      <div>
-        <p>coming Soon</p>
-      </div>
+      <ComingSoonAnimation />
     </>
   );
 };

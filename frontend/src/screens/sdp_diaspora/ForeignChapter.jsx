@@ -1,12 +1,12 @@
 import React from "react";
 import ComingSoonAnimation from "../../components/ComingSoon";
 
-const SocialStudio = () => {
+const ForeignChapter = () => {
   return (
-    <div>
+    <>
       <ComingSoonAnimation />
-    </div>
+    </>
   );
 };
 
-export default SocialStudio;
+export default ForeignChapter;

@@ -1,7 +1,7 @@
 import React from "react";
 import ComingSoonAnimation from "../../components/ComingSoon";
 
-const SocialStudio = () => {
+const ChapterAmb = () => {
   return (
     <div>
       <ComingSoonAnimation />
@@ -9,4 +9,4 @@ const SocialStudio = () => {
   );
 };
 
-export default SocialStudio;
+export default ChapterAmb;

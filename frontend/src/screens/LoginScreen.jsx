@@ -54,7 +54,7 @@ const LoginScreen = () => {
           <h2 className="page-header__title">Login</h2>
           <ul className="cleenhearts-breadcrumb list-unstyled">
             <li>
-              <i className="icon-home"></i> <a href="index.html">Home</a>
+              <i className="icon-home"></i> <a href="/">Home</a>
             </li>
             <li>
               <span>Login</span>

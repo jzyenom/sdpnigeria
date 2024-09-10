@@ -65,7 +65,7 @@
 --------------------------------------------------------------*/
 :root {
   --cleenhearts-font: "DM Sans", sans-serif;
-  --cleenhearts-heading-font: "Quicksand", sans-serif;
+  --cleenhearts-heading-font: "Georgia", sans-serif;
   --cleenhearts-heading-font2: "Castoro", serif;
   --cleenhearts-special-font: "Schoolbell", cursive;
   --cleenhearts-text: #757277;
@@ -353,7 +353,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--cleenhearts-heading-font, "Quicksand", sans-serif);
+  font-family: var(--cleenhearts-heading-font, "Georgia", sans-serif);
   color: var(--cleenhearts-base, #198754);
   font-weight: 700;
 }
@@ -603,7 +603,7 @@ textarea {
   position: relative;
   z-index: 2;
   margin: 0;
-  font-family: var(--cleenhearts-heading-font, "Quicksand", sans-serif);
+  font-family: var(--cleenhearts-heading-font, "Georgia", sans-serif);
   font-size: 50px;
   color: var(--cleenhearts-base, #198754);
   font-weight: bold;
@@ -743,7 +743,7 @@ textarea {
 }
 .cleenhearts-btn__text {
   position: relative;
-  font-family: var(--cleenhearts-heading-font, "Quicksand", sans-serif);
+  font-family: var(--cleenhearts-heading-font, "Georgia", sans-serif);
   font-size: 16px;
   color: inherit;
   margin-left: 40px;
@@ -1677,7 +1677,7 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: var(--cleenhearts-heading-font, "Quicksand", sans-serif);
+  font-family: var(--cleenhearts-heading-font, "Georgia", sans-serif);
   font-weight: 700;
   font-size: 14px;
   line-height: 18px;
@@ -1705,7 +1705,7 @@ textarea {
 }
 .volunteer-group__title {
   margin: 0 0 0 13px;
-  font-family: var(--cleenhearts-heading-font, "Quicksand", sans-serif);
+  font-family: var(--cleenhearts-heading-font, "Georgia", sans-serif);
   font-weight: 700;
   font-size: 14px;
   line-height: 18px;
@@ -2151,7 +2151,7 @@ textarea {
   border: 2px solid var(--cleenhearts-white, #fff);
   border-radius: 100px;
   background-color: transparent;
-  font-family: var(--cleenhearts-heading-font, "Quicksand", sans-serif);
+  font-family: var(--cleenhearts-heading-font, "Georgia", sans-serif);
   color: var(--cleenhearts-white, #fff);
   font-size: 16px;
   font-weight: 700;
@@ -2225,7 +2225,7 @@ textarea {
 .gift-card__form__title,
 .gift-card__form__input,
 .gift-card__form__input::placeholder {
-  font-family: var(--cleenhearts-heading-font, "Quicksand", sans-serif);
+  font-family: var(--cleenhearts-heading-font, "Georgia", sans-serif);
   color: var(--cleenhearts-white2, #efece7);
   font-size: 16px;
   font-weight: 700;
@@ -3473,7 +3473,7 @@ textarea {
   left: 30px;
   bottom: 0;
   padding: 16.5px 28.5px 14.5px;
-  font-family: var(--cleenhearts-heading-font, "Quicksand", sans-serif);
+  font-family: var(--cleenhearts-heading-font, "Georgia", sans-serif);
   color: var(--cleenhearts-bramble);
   font-weight: 700;
   font-size: 16px;
@@ -3505,7 +3505,7 @@ textarea {
 }
 .donation-card-five__title {
   margin-bottom: 10px;
-  font-family: var(--cleenhearts-heading-font, "Quicksand", sans-serif);
+  font-family: var(--cleenhearts-heading-font, "Georgia", sans-serif);
   font-weight: 700;
   font-size: 22px;
   line-height: 1.5;
@@ -4029,7 +4029,7 @@ textarea {
   text-align: center;
   height: 40px;
   max-width: 140px;
-  font-family: var(--cleenhearts-heading-font, "Quicksand", sans-serif);
+  font-family: var(--cleenhearts-heading-font, "Georgia", sans-serif);
   margin: auto;
   display: flex;
   align-items: center;
@@ -4341,7 +4341,7 @@ textarea {
 .blog-card-two__link span {
   display: inline-block;
   margin-left: 6px;
-  font-family: var(--cleenhearts-heading-font, "Quicksand", sans-serif);
+  font-family: var(--cleenhearts-heading-font, "Georgia", sans-serif);
   font-size: 16px;
   color: var(--cleenhearts-base, #198754);
   font-weight: 700;
@@ -4899,7 +4899,7 @@ textarea {
 .topbar-one__info__item {
   display: flex;
   align-items: center;
-  font-family: var(--cleenhearts-heading-font, "Quicksand", sans-serif);
+  font-family: var(--cleenhearts-heading-font, "Georgia", sans-serif);
   color: var(--cleenhearts-text-gray, #aa96b4);
   font-size: 16px;
   font-weight: 500;
@@ -5177,7 +5177,7 @@ textarea {
   color: var(--cleenhearts-purple, #fd7e14);
 }
 .main-header__cart__quantity {
-  font-family: var(--cleenhearts-heading-font, "Quicksand", sans-serif);
+  font-family: var(--cleenhearts-heading-font, "Georgia", sans-serif);
   font-size: 16px;
   font-weight: 700;
   color: var(--cleenhearts-base, #198754);
@@ -5992,7 +5992,7 @@ textarea {
   font-size: 16px;
   display: flex;
   align-items: center;
-  font-family: var(--cleenhearts-heading-font, "Quicksand", sans-serif);
+  font-family: var(--cleenhearts-heading-font, "Georgia", sans-serif);
   color: var(--cleenhearts-base, #198754);
   font-weight: 700;
   text-transform: capitalize;
@@ -6084,7 +6084,7 @@ textarea {
   font-size: 14px;
   line-height: 26px;
   color: var(--cleenhearts-base, #198754);
-  font-family: var(--cleenhearts-heading-font, "Quicksand", sans-serif);
+  font-family: var(--cleenhearts-heading-font, "Georgia", sans-serif);
   font-weight: 700;
   display: flex;
   text-transform: capitalize;
@@ -6319,7 +6319,7 @@ body.megamenu-popup-active .mobile-nav__content {
 }
 .demo-one__title {
   margin: 0;
-  font-family: var(--cleenhearts-heading-font, "Quicksand", sans-serif);
+  font-family: var(--cleenhearts-heading-font, "Georgia", sans-serif);
   color: var(--cleenhearts-base, #198754);
   text-transform: uppercase;
   font-size: 16px;
@@ -6571,7 +6571,7 @@ body.megamenu-popup-active .mobile-nav__content {
   line-height: 30px;
   color: var(--cleenhearts-white, #fff);
   font-size: 16px;
-  font-family: var(--cleenhearts-heading-font, "Quicksand", sans-serif);
+  font-family: var(--cleenhearts-heading-font, "Georgia", sans-serif);
   text-transform: capitalize;
   font-weight: 700;
   height: 46px;
@@ -11874,7 +11874,7 @@ body.megamenu-popup-active .mobile-nav__content {
   }
 }
 .testimonials-two .testimonials-card__name {
-  font-family: var(--cleenhearts-heading-font, "Quicksand", sans-serif);
+  font-family: var(--cleenhearts-heading-font, "Georgia", sans-serif);
 }
 
 .testimonials-three {
@@ -14796,7 +14796,7 @@ li:hover .sidebar__comments__icon::after {
 }
 .blog-five__card__btn {
   display: inline-block;
-  font-family: var(--cleenhearts-heading-font, "Quicksand", sans-serif);
+  font-family: var(--cleenhearts-heading-font, "Georgia", sans-serif);
   font-size: 16px;
   color: var(--cleenhearts-brown2);
   font-weight: 700;
@@ -15958,6 +15958,106 @@ li:hover .sidebar__comments__icon::after {
   color: inherit;
 }
 
+/* Services */
+.service-area {
+  padding: 30px 0 30px;
+}
+
+.service-area .single_service_box {
+  border: 1px solid #eeeeee;
+  border-radius: 5px;
+  padding: 40px 30px 35px;
+  position: relative;
+  z-index: 1;
+  transition: 0.5s;
+  margin-bottom: 30px;
+}
+
+.service-area .single_service_box::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 0%;
+  width: 100%;
+  transition: 0.5s;
+  background: var(--cleenhearts-purple, #fd7e14);
+  z-index: -1;
+  border-radius: 5px;
+}
+
+.service-area .service_content h2 {
+  opacity: 0.3;
+  font-size: 50px;
+  letter-spacing: 1px;
+  line-height: 30px;
+  font-weight: 800;
+  margin: 0 0 0;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: var(--cleenhearts-base, #198754);
+  font-weight: bold;
+  color: transparent;
+  transition: 0.5s;
+}
+
+.service-area .service_content h3 {
+  font-size: 23px;
+  letter-spacing: 0px;
+  line-height: 32px;
+  color: #232323;
+  font-weight: 700;
+  margin: 30px 0 10px;
+  transition: 0.5s;
+}
+
+.service-area .service_content p {
+  font-size: 16px;
+  letter-spacing: 0px;
+  line-height: 28px;
+  color: #6f7785;
+  font-weight: 400;
+  margin: 0 0 0;
+  transition: 0.5s;
+}
+
+.service-area .service_shape {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  transition: 0.7s;
+  z-index: -1;
+}
+
+.service-area .service_shape img {
+  width: 100%;
+  transition: 0.5s;
+}
+
+.single_service_box:hover::before {
+  height: 100%;
+}
+
+.single_service_box:hover .service_shape {
+  opacity: 1;
+}
+
+.single_service_box:hover .service_content h2 {
+  opacity: 1;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
+  color: transparent;
+}
+
+.single_service_box:hover .service_content h3 {
+  color: #fff;
+}
+
+.single_service_box:hover .service_content p {
+  color: #fff;
+}
+
+/* Services */
+
 /*--------------------------------------------------------------
 # Shop Details
 --------------------------------------------------------------*/
@@ -16183,7 +16283,7 @@ li:hover .sidebar__comments__icon::after {
   -webkit-appearance: textfield;
   -moz-appearance: textfield;
   appearance: textfield;
-  font-family: var(--cleenhearts-heading-font, "Quicksand", sans-serif);
+  font-family: var(--cleenhearts-heading-font, "Georgia", sans-serif);
   color: var(--cleenhearts-purple, #fd7e14);
   outline: none;
   font-size: 16px;
@@ -16525,7 +16625,7 @@ li:hover .sidebar__comments__icon::after {
 .cart-page__cart-total li:not(:nth-child(2)) {
   display: flex;
   align-items: center;
-  font-family: var(--cleenhearts-heading-font, "Quicksand", sans-serif);
+  font-family: var(--cleenhearts-heading-font, "Georgia", sans-serif);
   justify-content: space-between;
   gap: 15px;
   font-size: 18px;
@@ -17047,7 +17147,7 @@ li:hover .sidebar__comments__icon::after {
 .checkout-page__order-table tbody tr td.pro__sub-price {
   font-size: 16px;
   line-height: 1;
-  font-family: var(--cleenhearts-heading-font, "Quicksand", sans-serif);
+  font-family: var(--cleenhearts-heading-font, "Georgia", sans-serif);
   color: var(--cleenhearts-base, #198754);
   font-weight: 700;
   text-transform: capitalize;
@@ -17138,7 +17238,7 @@ li:hover .sidebar__comments__icon::after {
   padding: 10px;
   display: inline-block;
   color: var(--cleenhearts-purple, #fd7e14);
-  font-family: var(--cleenhearts-heading-font, "Quicksand", sans-serif);
+  font-family: var(--cleenhearts-heading-font, "Georgia", sans-serif);
   font-size: 16px;
   font-weight: 600;
   line-height: 1;
@@ -17239,7 +17339,7 @@ li:hover .sidebar__comments__icon::after {
   margin-bottom: 37px;
 }
 .login-page__form__or-text {
-  font-family: var(--cleenhearts-heading-font, "Quicksand", sans-serif);
+  font-family: var(--cleenhearts-heading-font, "Georgia", sans-serif);
   color: var(--cleenhearts-base, #198754);
   font-size: 16px;
   font-weight: 700;
@@ -17315,6 +17415,18 @@ li:hover .sidebar__comments__icon::after {
 .login-page__form__register-text a:hover {
   background-size: 100% 1px;
 }
+
+/*--------------------------------------------------------------
+# Coming Soon
+--------------------------------------------------------------*/
+.coming-soon__image {
+  max-width: 100%;
+  height: auto;
+  animation: slowXmove 8s ease-in infinite;
+}
+/*--------------------------------------------------------------
+# Coming Soon
+--------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
 # Error 404
@@ -18204,7 +18316,7 @@ li:hover .sidebar__comments__icon::after {
   }
 }
 .help-donate-one__text {
-  font-family: var(--cleenhearts-heading-font, "Quicksand", sans-serif);
+  font-family: var(--cleenhearts-heading-font, "Georgia", sans-serif);
   font-size: 80px;
   font-weight: 700;
   line-height: 1.125;
@@ -18345,7 +18457,7 @@ li:hover .sidebar__comments__icon::after {
   border: 0;
   border-radius: 100px;
   background-color: transparent;
-  font-family: var(--cleenhearts-heading-font, "Quicksand", sans-serif);
+  font-family: var(--cleenhearts-heading-font, "Georgia", sans-serif);
   color: var(--cleenhearts-base);
   letter-spacing: -0.03em;
   font-size: 16px;
@@ -18383,7 +18495,7 @@ li:hover .sidebar__comments__icon::after {
   width: 100%;
   height: 70px;
   padding: 0 41px;
-  font-family: var(--cleenhearts-heading-font, "Quicksand", sans-serif);
+  font-family: var(--cleenhearts-heading-font, "Georgia", sans-serif);
   color: var(--cleenhearts-base);
   font-weight: 700;
   font-size: 24px;
@@ -20228,7 +20340,7 @@ li:hover .sidebar__comments__icon::after {
   top: -3px;
   padding: 10px;
   background-color: var(--cleenhearts-white, #fff);
-  font-family: var(--cleenhearts-heading-font, "Quicksand", sans-serif);
+  font-family: var(--cleenhearts-heading-font, "Georgia", sans-serif);
   font-size: 16px;
   color: var(--cleenhearts-purple, #fd7e14);
   font-weight: 700;
@@ -22142,7 +22254,7 @@ li:hover .sidebar__comments__icon::after {
 }
 .donations-three__tabs-box .tab-buttons .tab-btn {
   cursor: pointer;
-  font-family: var(--cleenhearts-heading-font, "Quicksand", sans-serif);
+  font-family: var(--cleenhearts-heading-font, "Georgia", sans-serif);
   font-size: 16px;
   font-weight: 500;
   line-height: 1;
@@ -22947,7 +23059,7 @@ li:hover .sidebar__comments__icon::after {
   height: 81px;
 }
 .donate-page__form__amount__sign {
-  font-family: var(--cleenhearts-heading-font, "Quicksand", sans-serif);
+  font-family: var(--cleenhearts-heading-font, "Georgia", sans-serif);
   font-size: 30px;
   color: var(--cleenhearts-white, #fff);
   font-weight: 700;
@@ -22963,7 +23075,7 @@ li:hover .sidebar__comments__icon::after {
   outline: none;
   background-color: transparent;
   text-align: right;
-  font-family: var(--cleenhearts-heading-font, "Quicksand", sans-serif);
+  font-family: var(--cleenhearts-heading-font, "Georgia", sans-serif);
   font-size: 30px;
   color: var(--cleenhearts-white, #fff);
   font-weight: 700;
@@ -22985,7 +23097,7 @@ li:hover .sidebar__comments__icon::after {
   border-radius: 10px;
   outline: 0;
   border: 0;
-  font-family: var(--cleenhearts-heading-font, "Quicksand", sans-serif);
+  font-family: var(--cleenhearts-heading-font, "Georgia", sans-serif);
   font-size: 24px;
   font-weight: 400;
   line-height: 1;
@@ -23182,7 +23294,7 @@ li:hover .sidebar__comments__icon::after {
   padding: 14px;
   background-color: var(--cleenhearts-white, #fff);
   border-radius: 100px;
-  font-family: var(--cleenhearts-heading-font, "Quicksand", sans-serif);
+  font-family: var(--cleenhearts-heading-font, "Georgia", sans-serif);
   font-size: 16px;
   color: var(--cleenhearts-base, #198754);
   font-weight: 600;
@@ -23302,7 +23414,7 @@ li:hover .sidebar__comments__icon::after {
   }
 }
 .subscribe__title {
-  font-family: var(--cleenhearts-heading-font, "Quicksand", sans-serif);
+  font-family: var(--cleenhearts-heading-font, "Georgia", sans-serif);
   color: var(--cleenhearts-white, #fff);
   font-weight: 700;
   font-size: 40px;

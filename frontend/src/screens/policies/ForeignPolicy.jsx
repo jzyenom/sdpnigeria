@@ -1,6 +1,6 @@
 import React from "react";
 
-const AgricultureDevelopment = () => {
+const ForeignPolicy = () => {
   return (
     <>
       <section className="page-header @@extraClassName">
@@ -13,13 +13,13 @@ const AgricultureDevelopment = () => {
         ></div>
         {/* <!-- /.page-header__bg --> */}
         <div className="container">
-          <h2 className="page-header__title">Agricultural Development</h2>
+          <h2 className="page-header__title">Foreign Policy</h2>
           <ul className="cleenhearts-breadcrumb list-unstyled">
             <li>
               <i className="icon-home"></i> <a href="/">Home</a>
             </li>
             <li>
-              <span>our news</span>
+              <span>Foreign Policy</span>
             </li>
           </ul>
           {/* <!-- /.thm-breadcrumb list-unstyled --> */}
@@ -34,8 +34,7 @@ const AgricultureDevelopment = () => {
           <div className="row justify-content-center">
             <div className="col-lg-6">
               <h1 className="blog-card__title">
-                Transforming Agricultural Production Systems, Harnessing Water
-                Resources And Facilitating Rural Development{" "}
+                The foreign Policy Thrust of the SDP Government
               </h1>
 
               <div
@@ -43,20 +42,31 @@ const AgricultureDevelopment = () => {
                 style={{ marginTop: -1.5 + "em" }}
               >
                 <p className="pricing-card blog-card-four__text ">
-                  The state of agriculture is one of the clearest signs of
-                  underdevelopment in Nigeria today. About 82 million hectares
-                  or 40% of land in Nigeria is arable. This constitutes about
-                  14% of the 600 million hectares of arable land in Africa,
-                  close to 10% of the global total. Yet, Nigeria has lived with
-                  the paradox of hunger in the midst of plenty; and food
-                  security remains a mirage for most of its citizens. . Data
-                  from the Central Bank of Nigeria (CBN) continues to show
-                  massive importation of food, especially rice, wheat, sugar and
-                  fish, with the four items accounting for a whopping N1
-                  trillion loss to the nation annually. It is estimated that
-                  Nigeria has about $22 billion food import substitution bill,
-                  which is threatening the sustainability of food security and
-                  the nation’s foreign exchange earnings.
+                  The SDP shall reposition Nigeria’s foreign policy from an
+                  emphasis on bilateral agreements with countries and
+                  international organisations to a sector-specific partnership
+                  and exchange model, which essentially focuses on the Nigerian
+                  economy and the Nigerian people. This direction of foreign
+                  policy will propagate government’s actions to deal with
+                  defence, security, international political relations and
+                  international economic relations on domestic corresponding
+                  bases. This purpose in altering or creating a condition
+                  outside the sovereign boundaries is to gain national
+                  advantage, usually defined in terms of national interest.
+                  National image both at home and abroad is an ethical issue. It
+                  may appear intangible but the benefits and advantages flowing
+                  from a good image are inestimably unquantifiable. The
+                  perception of Nigeria by members of the international
+                  community, how it pursues relations with others and
+                  particularly, the behavior of its citizens at home and abroad
+                  can affect the country’s image. Thus, appropriate image making
+                  will feature fundamentally in our nation’s foreign policy.
+                  Improved cooperation with other national military forces would
+                  engender peace regional and globally. Similarly, improved
+                  bilateral and multilateral trade relations would enhance
+                  trade, technology transfer and military training. These in
+                  turn promote the welfare of Nigerians abroad to ensure they
+                  are treated with respect and dignity in all circumstances.
                   {/* <!-- /.pricing-card__content --> */}
                 </p>
                 {/* <!-- /.blog-card-four__text --> */}
@@ -74,8 +84,8 @@ const AgricultureDevelopment = () => {
                   >
                     <a href="#" className="blog-card__image">
                       <img
-                        src="src/assets/images/agriculture.png"
-                        alt="social_security_benefits_image"
+                        src="src/assets/images/foreign.png"
+                        alt="foreign_policy"
                       />
                       {/* <div className="blog-card__date">
                                     <span>03</span>
@@ -97,7 +107,7 @@ const AgricultureDevelopment = () => {
           <div className="col-lg-8">
             <div className="sec-title">
               <h6 className="sec-title__tagline">
-                The vision of an SDP Gorvernment for the sector
+                The vision of an SDP Gorvernment
               </h6>
             </div>
             <div className=" blog-card-four__content">
@@ -105,9 +115,16 @@ const AgricultureDevelopment = () => {
                 className="pricing-card blog-card-four__text "
                 style={{ marginTop: -2 + "em" }}
               >
-                Sustainable agricultural productivity and use of renewable
-                natural resources for economic development and well-being of
-                Nigerians in a new, credible and stable political order.
+                A foreign policy thrust that is dynamic, citizen-oriented,
+                investment-driven, security conscious that will put Nigeria
+                first, elicit patriotism in the citizenry and restore Nigeria’s
+                respect and prestige in the assembly of nations. The SDP is in
+                favour of a national security architecture that is predicated on
+                its national interest as well as its strategic intentions within
+                the region and on the global stage. The security of the Nigerian
+                people is paramount. As a result an effective and
+                result-oriented national security system will be put in place to
+                restore and maintain a peaceful environment for its citizenry.
               </p>
             </div>
           </div>
@@ -121,4 +138,4 @@ const AgricultureDevelopment = () => {
   );
 };
 
-export default AgricultureDevelopment;
+export default ForeignPolicy;

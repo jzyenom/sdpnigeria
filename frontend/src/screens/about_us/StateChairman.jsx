@@ -1,7 +1,11 @@
 import React from "react";
-
+import StateChairmanTable from "../../components/StateChairmanTable";
 const StateChairman = () => {
-  return <div>StateChairman</div>;
+  return (
+    <>
+      <StateChairmanTable />
+    </>
+  );
 };
 
 export default StateChairman;

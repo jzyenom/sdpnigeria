@@ -11,6 +11,7 @@ import Home from "../screens/Home";
 // import AboutScreen from "./AboutScreen";
 import Tabs from "./../components/tabs/Tabs";
 import NationalChairman from "./about_us/NationalChairman";
+import Services from "../components/Services";
 
 const HomeScreen = () => {
   // eslint-disable-next-line no-unused-vars
@@ -20,23 +21,17 @@ const HomeScreen = () => {
 
   return (
     <>
-      {userInfo ? (
-        <>
-          <Hero />
-          <Home />
-          {/* <Tabs /> */}
-          {/* <AboutScreen /> */}
-          {/* <NationalChairman /> */}
-          <About />
-        </>
-      ) : (
-        <>
-          <Hero />
-          {/* <About /> */}
-          {/* <HelpDonate />
+      <Hero />
+      <Home />
+      <Services />
+      {/* <Tabs /> */}
+      {/* <AboutScreen /> */}
+      {/* <NationalChairman /> */}
+      <About />
+
+      {/* <About /> */}
+      {/* <HelpDonate />
           <Donate /> */}
-        </>
-      )}
     </>
   );
 };

@@ -1,0 +1,68 @@
+.coming-soon-container {
+  position: relative;
+  width: 300px;
+  height: 200px; /* Increased height to accommodate the loader */
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+  font-size: 24px;
+  color: #000;
+  text-align: center;
+}
+
+.coming-soon-text {
+  z-index: 1;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.loader-container {
+  position: absolute;
+  bottom: 10px; /* Position at the bottom of the container */
+  width: 100%;
+  height: 20px;
+  overflow: hidden; /* Hide the part of the square that goes outside */
+  display: flex;
+  justify-content: center; /* Center the loader horizontally */
+}
+
+.moving-square {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  background-color: orange;
+  animation: moveAndTransform 3s infinite ease-in-out, fadeEffect 3s infinite ease-in-out;
+}
+
+@keyframes moveAndTransform {
+  0% {
+    left: 0%;
+    width: 20px;
+    height: 20px;
+    transform: translateX(0) scaleX(1); /* Initial position and scale */
+  }
+  50% {
+    left: 0%;
+    width: 100%;
+    height: 20px; /* Stretched to fit the width of the line */
+    transform: translateX(0) scaleX(1); /* Stretched position */
+  }
+  100% {
+    left: 0%;
+    width: 20px;
+    height: 20px;
+    transform: translateX(0) scaleX(1); /* Return to original size */
+  }
+}
+
+@keyframes fadeEffect {
+  0%, 100% {
+    opacity: 1; /* Fully visible at the start and end */
+  }
+  50% {
+    opacity: 0.2; /* Fades out in the middle */
+  }
+}

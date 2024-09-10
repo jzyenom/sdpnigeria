@@ -1,318 +1,194 @@
-// import "../assets/css/agrion.css";
+import React, { useState, useEffect } from "react";
+import bImg_1 from "../assets/images/SdpBg/bg1.jpg";
+import bImg_2 from "../assets/images/SdpBg/bg2.jpg";
+import bImg_3 from "../assets/images/SdpBg/bg3.jpg";
+import bShap_1 from "../assets/images/shapes/slider-1-shape-1.png";
+import bShap_2 from "../assets/images/shapes/slider-1-shape-2.png";
 
 const Hero = () => {
-  // const image1 = () => <img src="../src/assets/images/slider_bg2.jpg" />;
+  const [imagesLoaded, setImagesLoaded] = useState(false);
+
+  // Preload images
+  useEffect(() => {
+    const imageList = [bImg_1, bImg_2, bImg_3, bShap_1, bShap_2];
+    const loadImages = imageList.map((img) => {
+      const image = new Image();
+      image.src = img;
+      return new Promise((resolve) => {
+        image.onload = resolve;
+      });
+    });
+
+    Promise.all(loadImages).then(() => {
+      setImagesLoaded(true);
+    });
+  }, []);
+
   return (
-    // <!-- Start slider-area -->
     <>
-      {/* <!--Main Slider Start--> */}
-      <section className="main-slider-one">
-        <div className="main-slider-one__wrapper">
-          <div
-            className="main-slider-one__carousel cleenhearts-owl__carousel owl-carousel"
-            data-owl-options='{
-			"loop": true,
-			"animateOut": "fadeOut",
-			"animateIn": "fadeIn",
-			"items": 1,
-			"autoplay": true,
-			"autoplayTimeout": 7000,
-			"smartSpeed": 1000,
-			"nav": false,
-			"navText": ["<span className=\"icon-left-arrow\"></span>","<span className=\"icon-right-arrow\"></span>"],
-			"dots": true,
-			"margin": 0
-			}'
-          >
-            <div className="item">
-              <div className="main-slider-one__item">
-                <div
-                  className="main-slider-one__bg"
-                  style={{
-                    backgroundImage:
-                      "url(../src/assets/images/background/slider-bg1.jpg)",
-                  }}
-                ></div>
-                <div
-                  className="main-slider-one__shape-one"
-                  style={{
-                    backgroundImage:
-                      "url(../src/assets/images/shape/slider-1-shape-1.png)",
-                  }}
-                ></div>
-                <div
-                  className="main-slider-one__shape-two"
-                  style={{
-                    backgroundImage:
-                      "url(../src/assets/images/shape/slider-1-shape-2.png)",
-                  }}
-                ></div>
-                <div className="main-slider-one__content">
-                  <h4 className="main-slider-one__sub-title">
-                    Change is coming..
-                  </h4>
-                  {/* <!-- slider-sub-title --> */}
-                  <h2
-                    className="main-slider-one__title"
-                    style={{ color: "orange" }}
-                  >
-                    <span className="main-slider-one__title__text">
-                      SDP is Leading a new way{" "}
-                    </span>
-                    <br />
-                    <span className="main-slider-one__title__text">
-                      to those need it
-                    </span>
-                  </h2>
-                  {/* <!-- slider-title --> */}
-                  <div className="main-slider-one__btn">
-                    <a
-                      href="become-a-volunteer.html"
-                      className="cleenhearts-btn"
+      {imagesLoaded ? (
+        <section className="main-slider-one">
+          <div className="main-slider-one__wrapper">
+            <div
+              className="main-slider-one__carousel cleenhearts-owl__carousel owl-carousel"
+              data-owl-options='{
+                "loop": true,
+                "animateOut": "fadeOut",
+                "animateIn": "fadeIn",
+                "items": 1,
+                "autoplay": true,
+                "autoplayTimeout": 7000,
+                "smartSpeed": 1000,
+                "nav": false,
+                "navText": ["<span className=\"icon-left-arrow\"></span>","<span className=\"icon-right-arrow\"></span>"],
+                "dots": true,
+                "margin": 0
+              }'
+            >
+              <div className="item">
+                <div className="main-slider-one__item">
+                  <div
+                    className="main-slider-one__bg"
+                    style={{ backgroundImage: `url(${bImg_1})` }}
+                  ></div>
+                  <div
+                    className="main-slider-one__shape-one"
+                    style={{ backgroundImage: `url(${bShap_1})` }}
+                  ></div>
+                  <div
+                    className="main-slider-one__shape-two"
+                    style={{ backgroundImage: `url(${bShap_2})` }}
+                  ></div>
+                  <div className="main-slider-one__content">
+                    <h4 className="main-slider-one__sub-title">
+                      Change is coming..
+                    </h4>
+                    <h2
+                      className="main-slider-one__title"
+                      style={{ color: "orange" }}
                     >
-                      <div className="cleenhearts-btn__icon-box">
-                        <div className="cleenhearts-btn__icon-box__inner">
-                          <span className="icon-duble-arrow"></span>
-                        </div>
-                      </div>
-                      <span className="cleenhearts-btn__text">
-                        join with us
+                      <span className="main-slider-one__title__text">
+                        SDP is Leading a new way{" "}
                       </span>
-                    </a>
-                    {/* <!-- slider-btn --> */}
-                    <div className="volunteer-group">
+                      <br />
+                      <span className="main-slider-one__title__text">
+                        to those need it
+                      </span>
+                    </h2>
+                    <div className="main-slider-one__btn">
                       <a
-                        href="volunteer-details.html"
-                        className="volunteer-group__link"
+                        href="become-a-volunteer.html"
+                        className="cleenhearts-btn"
                       >
-                        <img
-                          src="src/assets/images/volunteer/volunteer-image-1.png"
-                          alt="volunteer"
-                          className="volunteer-group__image"
-                        />
+                        <div className="cleenhearts-btn__icon-box">
+                          <div className="cleenhearts-btn__icon-box__inner">
+                            <span className="icon-duble-arrow"></span>
+                          </div>
+                        </div>
+                        <span className="cleenhearts-btn__text">
+                          join with us
+                        </span>
                       </a>
-                      {/* <!-- /.volunteer-group__link --> */}
-                      <a
-                        href="volunteer-details.html"
-                        className="volunteer-group__link"
-                      >
-                        <img
-                          src="src/assets/images/volunteer/volunteer-image-2.png"
-                          alt="volunteer"
-                          className="volunteer-group__image"
-                        />
-                      </a>
-                      {/* <!-- /.volunteer-group__link --> */}
-                      <a
-                        href="volunteer-details.html"
-                        className="volunteer-group__link"
-                      >
-                        <img
-                          src="src/assets/images/volunteer/volunteer-image-3.png"
-                          alt="volunteer"
-                          className="volunteer-group__image"
-                        />
-                      </a>
-                      {/* <!-- /.volunteer-group__link --> */}
                     </div>
-                    {/* <!-- /.volunteer-group --> */}
                   </div>
                 </div>
               </div>
-            </div>
 
-            {/* <!-- item --> */}
-            <div className="item">
-              <div className="main-slider-one__item">
-                <div
-                  className="main-slider-one__bg"
-                  style={{
-                    backgroundImage:
-                      "url(../src/assets/images/background/slider-bg2.jpg)",
-                  }}
-                ></div>
-                <div
-                  className="main-slider-one__shape-one"
-                  style={{
-                    backgroundImage:
-                      "url(../src/assets/images/shape/slider-1-shape-1.png)",
-                  }}
-                ></div>
-                <div
-                  className="main-slider-one__shape-two"
-                  style={{
-                    backgroundImage:
-                      "url(../src/assets/images/shape/slider-1-shape-2.png)",
-                  }}
-                ></div>
-                <div className="main-slider-one__content">
-                  <h5 className="main-slider-one__sub-title">Fix Nigeria </h5>
-                  {/* <!-- slider-sub-title --> */}
-                  <h2 className="main-slider-one__title">
-                    <span className="main-slider-one__title__text">
-                      Let’s Get Edo &amp; Ondo Working Again{" "}
-                    </span>
-                    <br />
-                    <span className="main-slider-one__title__text">
-                      Let's REBUILD Nigeria together.{" "}
-                    </span>
-                  </h2>
-                  {/* <!-- slider-title --> */}
-                  <div className="main-slider-one__btn">
-                    <a
-                      href="become-a-volunteer.html"
-                      className="cleenhearts-btn"
-                    >
-                      <div className="cleenhearts-btn__icon-box">
-                        <div className="cleenhearts-btn__icon-box__inner">
-                          <span className="icon-duble-arrow"></span>
-                        </div>
-                      </div>
-                      <span className="cleenhearts-btn__text">
-                        join with us
+              <div className="item">
+                <div className="main-slider-one__item">
+                  <div
+                    className="main-slider-one__bg"
+                    style={{ backgroundImage: `url(${bImg_2})` }}
+                  ></div>
+                  <div
+                    className="main-slider-one__shape-one"
+                    style={{ backgroundImage: `url(${bShap_1})` }}
+                  ></div>
+                  <div
+                    className="main-slider-one__shape-two"
+                    style={{ backgroundImage: `url(${bShap_2})` }}
+                  ></div>
+                  <div className="main-slider-one__content">
+                    <h5 className="main-slider-one__sub-title">Fix Nigeria </h5>
+                    <h2 className="main-slider-one__title">
+                      <span className="main-slider-one__title__text">
+                        Let’s Get Edo &amp; Ondo Working Again{" "}
                       </span>
-                    </a>
-                    {/* <!-- slider-btn --> */}
-                    <div className="volunteer-group">
+                      <br />
+                      <span className="main-slider-one__title__text">
+                        Let's REBUILD Nigeria together.{" "}
+                      </span>
+                    </h2>
+                    <div className="main-slider-one__btn">
                       <a
-                        href="volunteer-details.html"
-                        className="volunteer-group__link"
+                        href="become-a-volunteer.html"
+                        className="cleenhearts-btn"
                       >
-                        <img
-                          src="src/assets/images/volunteer/volunteer-image-1.png"
-                          alt="volunteer"
-                          className="volunteer-group__image"
-                        />
+                        <div className="cleenhearts-btn__icon-box">
+                          <div className="cleenhearts-btn__icon-box__inner">
+                            <span className="icon-duble-arrow"></span>
+                          </div>
+                        </div>
+                        <span className="cleenhearts-btn__text">
+                          join with us
+                        </span>
                       </a>
-                      {/* <!-- /.volunteer-group__link --> */}
-                      <a
-                        href="volunteer-details.html"
-                        className="volunteer-group__link"
-                      >
-                        <img
-                          src="src/assets/images/volunteer/volunteer-image-2.png"
-                          alt="volunteer"
-                          className="volunteer-group__image"
-                        />
-                      </a>
-                      {/* <!-- /.volunteer-group__link --> */}
-                      <a
-                        href="volunteer-details.html"
-                        className="volunteer-group__link"
-                      >
-                        <img
-                          src="src/assets/images/volunteer/volunteer-image-3.png"
-                          alt="volunteer"
-                          className="volunteer-group__image"
-                        />
-                      </a>
-                      {/* <!-- /.volunteer-group__link --> */}
                     </div>
-                    {/* <!-- /.volunteer-group --> */}
                   </div>
                 </div>
               </div>
-            </div>
 
-            {/* <!-- item --> */}
-            <div className="item">
-              <div className="main-slider-one__item">
-                <div
-                  className="main-slider-one__bg"
-                  style={{
-                    backgroundImage:
-                      "url(../src/assets/images/background/slider-1-3.jpg)",
-                  }}
-                ></div>
-                <div
-                  className="main-slider-one__shape-one"
-                  style={{
-                    backgroundImage:
-                      "url(../src/assets/images/shape/slider-1-shape-1.png)",
-                  }}
-                ></div>
-                <div
-                  className="main-slider-one__shape-two"
-                  style={{
-                    backgroundImage:
-                      "url(../src/assets/images/shape/slider-1-shape-2.png)",
-                  }}
-                ></div>
-                <div className="main-slider-one__content">
-                  <h5 className="main-slider-one__sub-title">Lets Fix Edo </h5>
-                  {/* <!-- slider-sub-title --> */}
-                  <h2 className="main-slider-one__title">
-                    <span className="main-slider-one__title__text">
-                      EDO must work for EDO People
-                    </span>
-                    <br />
-                    <span className="main-slider-one__title__text">
-                      ...Let's REBUILD Nigeria together.{" "}
-                    </span>
-                  </h2>
-                  {/* <!-- slider-title --> */}
-                  <div className="main-slider-one__btn">
-                    <a
-                      href="become-a-volunteer.html"
-                      className="cleenhearts-btn"
-                    >
-                      <div className="cleenhearts-btn__icon-box">
-                        <div className="cleenhearts-btn__icon-box__inner">
-                          <span className="icon-duble-arrow"></span>
-                        </div>
-                      </div>
-                      <span className="cleenhearts-btn__text">
-                        join with us
+              <div className="item">
+                <div className="main-slider-one__item">
+                  <div
+                    className="main-slider-one__bg"
+                    style={{ backgroundImage: `url(${bImg_3})` }}
+                  ></div>
+                  <div
+                    className="main-slider-one__shape-one"
+                    style={{ backgroundImage: `url(${bShap_1})` }}
+                  ></div>
+                  <div
+                    className="main-slider-one__shape-two"
+                    style={{ backgroundImage: `url(${bShap_2})` }}
+                  ></div>
+                  <div className="main-slider-one__content">
+                    <h5 className="main-slider-one__sub-title">
+                      Let's Fix Edo{" "}
+                    </h5>
+                    <h2 className="main-slider-one__title">
+                      <span className="main-slider-one__title__text">
+                        EDO must work for EDO People
                       </span>
-                    </a>
-                    {/* <!-- slider-btn --> */}
-                    <div className="volunteer-group">
+                      <br />
+                      <span className="main-slider-one__title__text">
+                        ...Let's REBUILD Nigeria together.{" "}
+                      </span>
+                    </h2>
+                    <div className="main-slider-one__btn">
                       <a
-                        href="volunteer-details.html"
-                        className="volunteer-group__link"
+                        href="become-a-volunteer.html"
+                        className="cleenhearts-btn"
                       >
-                        <img
-                          src="src/assets/images/volunteer/volunteer-image-1.png"
-                          alt="volunteer"
-                          className="volunteer-group__image"
-                        />
+                        <div className="cleenhearts-btn__icon-box">
+                          <div className="cleenhearts-btn__icon-box__inner">
+                            <span className="icon-duble-arrow"></span>
+                          </div>
+                        </div>
+                        <span className="cleenhearts-btn__text">
+                          join with us
+                        </span>
                       </a>
-                      {/* <!-- /.volunteer-group__link --> */}
-                      <a
-                        href="volunteer-details.html"
-                        className="volunteer-group__link"
-                      >
-                        <img
-                          src="src/assets/images/volunteer/volunteer-image-2.png"
-                          alt="volunteer"
-                          className="volunteer-group__image"
-                        />
-                      </a>
-                      {/* <!-- /.volunteer-group__link --> */}
-                      <a
-                        href="volunteer-details.html"
-                        className="volunteer-group__link"
-                      >
-                        <img
-                          src="src/assets/images/volunteer/volunteer-image-3.png"
-                          alt="volunteer"
-                          className="volunteer-group__image"
-                        />
-                      </a>
-                      {/* <!-- /.volunteer-group__link --> */}
                     </div>
-                    {/* <!-- /.volunteer-group --> */}
                   </div>
                 </div>
               </div>
             </div>
-            {/* <!-- item --> */}
           </div>
-        </div>
-      </section>
-      {/* <!-- main-slider-end --> */}
-
-      {/* <!--Main Slider End--> */}
+        </section>
+      ) : (
+        <div>Loading...</div>
+      )}
     </>
   );
 };

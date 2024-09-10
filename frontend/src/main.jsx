@@ -30,6 +30,7 @@ import UserPage from "./screens/UserPage.jsx";
 // import AboutScreen from "./screens/AboutScreen.jsx";
 import ContactScreen from "./screens/ContactScreen.jsx";
 
+// About Us
 import TheParty from "./screens/about_us/TheParty.jsx";
 import Ideology from "./screens/about_us/Ideology.jsx";
 import NationalChairman from "./screens/about_us/NationalChairman.jsx";
@@ -43,12 +44,19 @@ import SdpMission from "./screens/about_us/SdpMission.jsx";
 import AgainstHunger from "./screens/about_us/AgainstHunger.jsx";
 import Error404 from "./screens/about_us/Error404.jsx";
 
+// Policies
 import SocialSecurity from "./screens/policies/SocialSecurity.jsx";
+import Education from "./screens/policies/Education.jsx";
 import HealthForAll from "./screens/policies/HealthForAll.jsx";
 import AgricultureDevelopment from "./screens/policies/AgricultureDevelopment.jsx";
 import InfrastructuralDevelopment from "./screens/policies/InfrastructuralDevelopment.jsx";
 import IndustrialGrowth from "./screens/policies/IndustrialGrowth.jsx";
 import SolidMineral from "./screens/policies/SolidMineral.jsx";
+import ForeignPolicy from "./screens/policies/ForeignPolicy";
+import Economy from "./screens/policies/Economy.jsx";
+import YouthDevelopment from "./screens/policies/YouthDevelopment.jsx";
+
+import CampaignSchedules from "./screens/resources/CampaignSchedules.jsx";
 import PartyManifesto from "./screens/resources/PartyManifesto.jsx";
 import PartyConstitution from "./screens/resources/PartyConstitution.jsx";
 
@@ -57,6 +65,15 @@ import PressRelease from "./screens/sdp_studio/PressRelease.jsx";
 import BlogDetails from "./screens/sdp_studio/BlogDetails.jsx";
 import SdpOnSocial from "./screens/sdp_studio/SdpOnSocial.jsx";
 import VideoGallery from "./screens/sdp_studio/VideoGallery.jsx";
+import Webinars from "./screens/sdp_studio/Webinars.jsx";
+import ForeignMember from "./screens/sdp_diaspora/ForeignMember.jsx";
+import ForeignChapter from "./screens/sdp_diaspora/ForeignChapter.jsx";
+import ForeignOffices from "./screens/sdp_diaspora/ForeignOffices.jsx";
+import ChapterAmb from "./screens/sdp_diaspora/ChapterAmb.jsx";
+import InecResults from "./screens/resources/InecResults.jsx";
+import Souvenirs from "./screens/resources/Souvenirs.jsx";
+import InternalElection from "./screens/resources/InternalElection.jsx";
+import SocialStudio from "./screens/sdp_studio/SocialStudio.jsx";
 
 // Load other scripts dynamically if not available as npm packages
 const loadScript = (src, type = "text/javascript") => {
@@ -138,6 +155,7 @@ const router = createBrowserRouter(
       <Route path="/sdp_mission" element={<SdpMission />} />
       <Route path="/our_mission_against_hunger" element={<AgainstHunger />} />
 
+      {/* Resources */}
       <Route
         path="/download_sdp_party_manifesto"
         element={<PartyManifesto />}
@@ -148,15 +166,39 @@ const router = createBrowserRouter(
         element={<PartyConstitution />}
       />
 
+      <Route
+        path="/election_&_campaign_schedules"
+        element={<CampaignSchedules />}
+      />
+      <Route
+        path="/internal_electiion_&_polling_result"
+        element={<InternalElection />}
+      />
+      <Route path="/election_results_inec" element={<InecResults />} />
+      <Route path="/sdp_party_souvenirs" element={<Souvenirs />} />
+
+      {/* Sdp Studio */}
       <Route path="/photo_gallery" element={<PhotoGallery />} />
       <Route path="/video_gallery" element={<VideoGallery />} />
       <Route path="/press_release" element={<PressRelease />} />
+      <Route path="/social_studio" element={<SocialStudio />} />
+      <Route path="/sdp_news_&_update" element={<PressRelease />} />
+      <Route path="/sdp_&_me" element={<PressRelease />} />
       <Route path="/blog_details/:id" element={<BlogDetails />} />
       <Route path="/sdp_on_social_media" element={<SdpOnSocial />} />
+      <Route path="/upcoming_webinars" element={<Webinars />} />
 
       {/* <Route path="/about/:page" element={<AboutScreen />} /> */}
 
+      {/* Policies */}
       <Route path="/social_security" element={<SocialSecurity />} />
+      <Route
+        path="/education_&_human_capital_development"
+        element={<Education />}
+      />
+      <Route path="/youth_development" element={<YouthDevelopment />} />
+      <Route path="/economy" element={<Economy />} />
+      <Route path="/foreign_policy" element={<ForeignPolicy />} />
       <Route path="/health_for_all" element={<HealthForAll />} />
       <Route
         path="/agriculture_development"
@@ -171,6 +213,16 @@ const router = createBrowserRouter(
         path="/solid_mineral-&-natural-resources"
         element={<SolidMineral />}
       />
+
+      {/* Sdp in diaspora */}
+      <Route path="/foreign_member_application" element={<ForeignMember />} />
+      <Route
+        path="/foreign_chapter_coordinators"
+        element={<ForeignChapter />}
+      />
+      <Route path="/foreign_chapter_offices" element={<ForeignOffices />} />
+      <Route path="/chapter_ambassadors" element={<ChapterAmb />} />
+
       <Route path="*" element={<Error404 />} />
 
       <Route path="" element={<PrivateRoute />}>

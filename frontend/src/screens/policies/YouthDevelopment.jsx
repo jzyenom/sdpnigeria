@@ -1,6 +1,6 @@
 import React from "react";
 
-const HealthForAll = () => {
+const YouthDevelopment = () => {
   return (
     <>
       <section className="page-header @@extraClassName">
@@ -13,13 +13,13 @@ const HealthForAll = () => {
         ></div>
         {/* <!-- /.page-header__bg --> */}
         <div className="container">
-          <h2 className="page-header__title">Health For All</h2>
+          <h2 className="page-header__title">Youth Development</h2>
           <ul className="cleenhearts-breadcrumb list-unstyled">
             <li>
               <i className="icon-home"></i> <a href="/">Home</a>
             </li>
             <li>
-              <span>our news</span>
+              <span>Youth Development</span>
             </li>
           </ul>
           {/* <!-- /.thm-breadcrumb list-unstyled --> */}
@@ -34,7 +34,8 @@ const HealthForAll = () => {
           <div className="row justify-content-center">
             <div className="col-lg-6">
               <h1 className="blog-card__title">
-                Quality, affordable healthcare delivery and health insurance{" "}
+                Empowering youth development and inclusiveness to raise viable,
+                credible and efficient replacement generation{" "}
               </h1>
 
               <div
@@ -42,23 +43,18 @@ const HealthForAll = () => {
                 style={{ marginTop: -1.5 + "em" }}
               >
                 <p className="pricing-card blog-card-four__text ">
-                  Health is wealth and the greatest dividend of democracy.
-                  Nigeria is ranked very low globally in healthcare delivery.
-                  From pregnancy through childhood to adult life, the health
-                  threats to the Nigerian life are legion. The country faces the
-                  triple jeopardy of persistent high prevalence of communicable
-                  diseases, re-emerging infections, and increasing prevalence of
-                  non-communicable diseases. Yet, there is no commensurate
-                  response to these existential threats. The annual budget for
-                  healthcare delivery has remained abysmally low, in spite of
-                  the huge health challenges. Further, the low allocation even
-                  when eventually released is not well applied. Nigeria is no
-                  longer in short supply of legislation and policy instruments
-                  to steer the nation’s health sector to optimal performance.
-                  What is lacking is a strong political will at the highest
-                  level of leadership. An SDP Government shall provide
-                  comprehensive, qualitative and affordable healthcare delivery
-                  to Nigerians.
+                  The Nigeria’s population is said to have reached about 198
+                  million people (NpoC, 2018). The National Population
+                  Commission states that about half of this number is made up of
+                  youth, defined as individuals between the 15 and 34 years of
+                  age. These young people should ordinarily be part of the
+                  productive sector of the economy that will engender growth and
+                  development. They constitute the greatest asset of the nation
+                  and can help drive economic development with their youthful
+                  strength. Any nation that fails to recognize the potentials of
+                  its youth endangers its future. Therefore, youth development
+                  and inclusiveness are key aspects of the SDP programme in
+                  ensuring and raising a replacement generation for our country.
                   {/* <!-- /.pricing-card__content --> */}
                 </p>
                 {/* <!-- /.blog-card-four__text --> */}
@@ -75,14 +71,11 @@ const HealthForAll = () => {
                     data-wow-delay="100ms"
                   >
                     <a href="#" className="blog-card__image">
-                      <img
-                        src="src/assets/images/health.png"
-                        alt="social_security_benefits_image"
-                      />
+                      <img src="src/assets/images/youth.png" alt="youth" />
                       {/* <div className="blog-card__date">
-                                <span>03</span>
-                                Sep
-                              </div> */}
+                                    <span>03</span>
+                                    Sep
+                                  </div> */}
                       {/* <!-- /.blog-card__date --> */}
                     </a>
                     {/* <!-- /.blog-card__image --> */}
@@ -96,10 +89,11 @@ const HealthForAll = () => {
               {/* <!-- /.row --> */}
             </div>
           </div>
+
           <div className="col-lg-8">
             <div className="sec-title">
               <h6 className="sec-title__tagline">
-                The vision of an SDP Gorvernment for the sector
+                The vision of an SDP Gorvernment for the Youth
               </h6>
             </div>
             <div className=" blog-card-four__content">
@@ -107,9 +101,8 @@ const HealthForAll = () => {
                 className="pricing-card blog-card-four__text "
                 style={{ marginTop: -2 + "em" }}
               >
-                A comprehensive healthcare delivery system and coverage
-                supporting high quality of life in a new, credible and stable
-                political order.
+                An empowered youth, is a ready replacement generation, for a new
+                credible and stable political order.
               </p>
             </div>
           </div>
@@ -123,4 +116,4 @@ const HealthForAll = () => {
   );
 };
 
-export default HealthForAll;
+export default YouthDevelopment;

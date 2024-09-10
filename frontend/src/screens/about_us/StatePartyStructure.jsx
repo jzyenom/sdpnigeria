@@ -16,7 +16,7 @@ const StatePartyStructure = () => {
           <h2 className="page-header__title">State Party Structure</h2>
           <ul className="cleenhearts-breadcrumb list-unstyled">
             <li>
-              <i className="icon-home"></i> <a href="index.html">Home</a>
+              <i className="icon-home"></i> <a href="/">Home</a>
             </li>
             <li>
               <span>our news</span>
@@ -69,8 +69,7 @@ const StatePartyStructure = () => {
                       </ul> */}
                       {/* <!-- /.list-unstyled blog-card-four__meta --> */}
                       <p className="pricing-card__list__text">
-                        The State Working Committee of the party
-                        shall comprise 
+                        The State Working Committee of the party shall comprise
                         the below-mentioned officers
                       </p>
                       {/* <!-- /.blog-card__title --> */}
@@ -80,37 +79,37 @@ const StatePartyStructure = () => {
                             <li>
                               <span className="pricing-card__list__icon icon-duble-arrow"></span>
                               <span className="pricing-card__list__text">
-                              The State Chairman
+                                The State Chairman
                               </span>
                             </li>
                             <li>
                               <span className="pricing-card__list__icon icon-duble-arrow"></span>
                               <span className="pricing-card__list__text">
-                              The State Vice Chairmen (3)
+                                The State Vice Chairmen (3)
                               </span>
                             </li>
                             <li>
                               <span className="pricing-card__list__icon icon-duble-arrow"></span>
                               <span className="pricing-card__list__text">
-                              The State Secretary
+                                The State Secretary
                               </span>
                             </li>
                             <li>
                               <span className="pricing-card__list__icon icon-duble-arrow"></span>
                               <span className="pricing-card__list__text">
-                              The State Treasurer
+                                The State Treasurer
                               </span>
                             </li>
                             <li>
                               <span className="pricing-card__list__icon icon-duble-arrow"></span>
                               <span className="pricing-card__list__text">
-                              The Financial Secretary
+                                The Financial Secretary
                               </span>
                             </li>
                             <li>
                               <span className="pricing-card__list__icon icon-duble-arrow"></span>
                               <span className="pricing-card__list__text">
-                              The Publicity Secretary
+                                The Publicity Secretary
                               </span>
                             </li>
                             <li>
@@ -123,19 +122,19 @@ const StatePartyStructure = () => {
                             <li>
                               <span className="pricing-card__list__icon icon-duble-arrow"></span>
                               <span className="pricing-card__list__text">
-                              State Legal Adviser
+                                State Legal Adviser
                               </span>
                             </li>
                             <li>
                               <span className="pricing-card__list__icon icon-duble-arrow"></span>
                               <span className="pricing-card__list__text">
-                              State Organising Secretary
+                                State Organising Secretary
                               </span>
                             </li>
                             <li>
                               <span className="pricing-card__list__icon icon-duble-arrow"></span>
                               <span className="pricing-card__list__text">
-                              State welfare Officer
+                                State welfare Officer
                               </span>
                             </li>
                           </ul>

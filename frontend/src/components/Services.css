@@ -1,0 +1,95 @@
+.service-area {
+  padding: 30px 0 30px;
+}
+
+.service-area .single_service_box {
+  border: 1px solid #eeeeee;
+  border-radius: 5px;
+  padding: 40px 30px 35px;
+  position: relative;
+  z-index: 1;
+  transition: 0.5s;
+  margin-bottom: 30px;
+}
+
+.service-area .single_service_box::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 0%;
+  width: 100%;
+  transition: 0.5s;
+  background: #37be99;
+  z-index: -1;
+  border-radius: 5px;
+}
+
+.service-area .service_content h2 {
+  opacity: 0.3;
+  font-size: 50px;
+  letter-spacing: 1px;
+  line-height: 30px;
+  font-weight: 800;
+  margin: 0 0 0;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #f18538;
+  color: transparent;
+  transition: 0.5s;
+}
+
+.service-area .service_content h3 {
+  font-size: 23px;
+  letter-spacing: 0px;
+  line-height: 32px;
+  color: #232323;
+  font-weight: 700;
+  margin: 30px 0 10px;
+  transition: 0.5s;
+}
+
+.service-area .service_content p {
+  font-size: 16px;
+  letter-spacing: 0px;
+  line-height: 28px;
+  color: #6f7785;
+  font-weight: 400;
+  margin: 0 0 0;
+  transition: 0.5s;
+}
+
+.service-area .service_shape {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  transition: 0.7s;
+  z-index: -1;
+}
+
+.service-area .service_shape img {
+  width: 100%;
+  transition: 0.5s;
+}
+
+.single_service_box:hover::before {
+  height: 100%;
+}
+
+.single_service_box:hover .service_shape {
+  opacity: 1;
+}
+
+.single_service_box:hover .service_content h2 {
+  opacity: 1;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
+  color: transparent;
+}
+
+.single_service_box:hover .service_content h3 {
+  color: #fff;
+}
+
+.single_service_box:hover .service_content p {
+  color: #fff;
+}

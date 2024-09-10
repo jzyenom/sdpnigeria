@@ -99,9 +99,9 @@ const Header = () => {
         <div className="container-fluid">
           <div className="main-header__inner">
             <div className="main-header__logo">
-              <Link to="/">
+              <a href="/">
                 <img src="/SDPLOGO.png" alt="SDP_LOGO" width="100" />
-              </Link>
+              </a>
               <button
                 type="button"
                 className="main-header__sidebar-btn sidebar-btn__toggler"
@@ -115,7 +115,7 @@ const Header = () => {
                 <ul className="main-menu__list">
                   {/* Home */}
                   <li>
-                    <Link to="/">Home</Link>
+                    <a href="/">Home</a>
                   </li>
                   {/* About Us */}
                   <li className="dropdown">
@@ -384,7 +384,7 @@ const Header = () => {
             <ul className="main-menu__list">
               {/* Home */}
               <li>
-                <Link to="/">Home</Link>
+                <a href="/">Home</a>
               </li>
 
               {/* About Us */}
