@@ -18,8 +18,7 @@ const ContactScreen = () => {
           <h2 className="page-header__title">Contact Us</h2>
           <ul className="cleenhearts-breadcrumb list-unstyled">
             <li>
-              <i className="icon-home">
-                </i> <a href="/">Home</a>
+              <i className="icon-home"></i> <a href="/">Home</a>
             </li>
             <li>
               <span>Contact Us</span>
